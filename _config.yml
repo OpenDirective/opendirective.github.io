@@ -1,0 +1,21 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink: pretty
+
+# Setup
+title: Opening Access Tech
+tagline: "The OpenDirective blog"
+description: 'Steve posts on his work as <a href="http://opendirective.com">OpenDirective</a> and anyhting else that takes his fancy. Usually at the intersection of Assistive technology, Accessibility and Open Development.'
+url: http://opendirective.github.io
+baseurl: ""
+paginate: 5
+
+# About/contact
+author:
+  name: Steve Lee
+  url: https://twitter.com/SteveALee
+  email: steve@opendirective.com
+
+# Custom vars
+version: 1.0.0
