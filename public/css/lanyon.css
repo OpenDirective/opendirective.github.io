@@ -184,7 +184,7 @@ h6 {
 .sidebar-nav-item.active,
 a.sidebar-nav-item:hover,
 a.sidebar-nav-item:focus {
-  text-decoration: none;
+  zzztext-decoration: none;
   background-color: rgba(255, 255, 255, 0.1);
   border-color: transparent;
 }
@@ -444,7 +444,7 @@ a.sidebar-nav-item:focus {
 }
 .related-posts li a:hover {
   color: #268bd2;
-  text-decoration: none;
+  zzztext-decoration: none;
 }
 .related-posts li a:hover small {
   color: inherit;
