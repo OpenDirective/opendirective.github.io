@@ -6,7 +6,7 @@ permalink: pretty
 # Setup
 title: Opening Access Tech
 tagline: "Steve Lee's OpenDirective blog"
-description: 'Steve posts on his work as <a href="https://www.opendirective.com">OpenDirective</a> at the intersection of Assistive technology, Accessibility and Open Development.'
+description: 'Steve posts on his work as <a href="https://www.opendirective.net/about">OpenDirective</a> at the intersection of Assistive technology, Accessibility and Open Development.'
 url: https://opendirective.github.io
 baseurl: ""
 paginate: 5
