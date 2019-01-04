@@ -5,9 +5,9 @@ title: About OpenDirective
 
 This site is Steve Lee's blog for his work as OpenDirective. Our work includes the following.
 
-## Digital Access Made Easy
+## OpenDirective
 
-OpenDirective is a social enterprise that enables people with cognitive disabilities or low digital literacy to more easily engage in activities that use digital technology. Our work covers development to consultancy and currently we are working on web standard support for cognitive accessibility at the w3c. We think Web technologies are most suitable for providing access to everyone, largely as this vision is at the heart of the web standards.
+OpenDirective's vision is to make digital access easy for all, espeically those with cognitive and learning disabilities. It is a social enterprise that stives to enable people with cognitive disabilities or low digital literacy to more easily engage in activities that use digital technology. Our work covers software development to consultancy and currently we are working on web standards support for cognitive accessibility at the W3C. We think Web technologies are most suitable for providing access to everyone, largely as this vision is at the heart of the web standards.
 
 We do this through open innovation and open source software development of assistive technology that enhances the accessibility of existing services.
 
