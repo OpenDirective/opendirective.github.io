@@ -3,11 +3,7 @@ layout: page
 title: About
 ---
 
-<p class="message">
-  This is Steve Lee's OpenDirective Blog
-</p>
-
-## OpenDirective
+## About OpenDirective
 
 ### Digital Access Made Easy
 
