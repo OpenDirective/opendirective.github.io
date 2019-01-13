@@ -9,7 +9,7 @@ The Cognitive Accesibility Task Force (TF) explore mockups of new introductory p
 
 The W3C [Cognitive Accessibility Task Force](https://www.w3.org/WAI/PF/cognitive-a11y-tf/) have captured a mass of knowledge and experience on the cognitive requirments and barriers that people often experience when using web tchnology. This appears in several published [W3C Technical Recommendations](https://www.w3.org/TR/?title=cognitive) (TRs), unpublished Editors Drafts and a set of Issues on GitHub. There is also the team wiki. Most of these documents are large, with much detail.
 
-For many, this mass of information is dense and a little hard to digest. Examples of people looking to learn from these documents include; those new to coga concepts, developers looking for design guidance or specification authors working to support more coga requirments.
+For many, this mass of information is dense and a little hard to digest. Examples of people looking to learn from these documents include; those new to coga concepts, developers looking for design guidance or specification authors working to support more coga requirements.
 
 The Task Force members therefore felt a desire to provide easier access in the form of introductory signposting and way-marking pages.
 
