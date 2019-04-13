@@ -7,13 +7,13 @@ This site is Steve Lee's blog for his work as OpenDirective. Our work includes t
 
 ## OpenDirective
 
-OpenDirective's vision is to make digital access easy for all, espeically those with cognitive and learning disabilities. It is a social enterprise that stives to enable people with cognitive disabilities or low digital literacy to more easily engage in activities that use digital technology. Our work covers software development to consultancy and currently we are working on web standards support for cognitive accessibility at the W3C. We think Web technologies are most suitable for providing access to everyone, largely as this vision is at the heart of the web standards.
+OpenDirective's vision is to make digital access easy for all, especially those with cognitive and learning disabilities. It is a social enterprise that strives to enable people with cognitive disabilities or low digital literacy to more easily engage in activities that use digital technology. Our work covers software development, open standards and consultancy. We think Web technologies are most suitable for providing inclusive access to everyone, a vision at the heart of web standards.
 
 We do this through open innovation and open source software development of assistive technology that enhances the accessibility of existing services.
 
 ## W3C Coga
 
-Steve has joined the W3C staff to help work on the representation of Cognitive Accessibility requirements in standards such as WCGA and supporting W3C documents. This involves working with the various Work Groups, Task Forces and Communities involved in this important and topical work.
+Steve has joined the W3C WAI staff to help work on the representation of [Cognitive Accessibility requirements in standards](https://www.w3.org/WAI/cognitive/) such as WCGA and supporting W3C documents. This involves working with the various Work Groups, Task Forces and Communities involved in this important and topical work.
 
 ## Always In Mind
 
@@ -28,7 +28,7 @@ Part of our R & D for Always In Mind has been as consortium members of several l
 
 ## Mulberry Symbols
 
-Garry Paxton created the [Mulberry Symbol set](https://straight-street.org) for people who use symbols to communicate with others, often via printed images on a board or an electronic AAC device. The symbols were developed to overcome the expensive licence fees of existing proprietary sets and to allow them to be used in innovate ways online. They feature unusual images aimed at adults. Garry assigned copyright over to Steve Lee who is maintaining the symbols and website. We have already collaborated with the open source [cboard](https://www.cboard.io) which uses the symbols and hope to see more uses, including the [Global Symbol Dictionary](https://globalsymbols.com).
+Garry Paxton created the [Mulberry Symbol set](https://mulberrysymbols.org) for people who use symbols to communicate with others, often via printed images on a board or an electronic AAC device. The symbols were developed to overcome the expensive licence fees of existing proprietary sets and to allow them to be used in innovate ways online. They feature unusual images aimed at adults. Garry assigned copyright over to Steve Lee who is maintaining the symbols and website. We have already collaborated with the open source [cboard](https://www.cboard.io) which uses the symbols and hope to see more uses, including the [Global Symbol Dictionary](https://globalsymbols.com).
 
 <hr>
 
