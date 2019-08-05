@@ -55,7 +55,7 @@ Most of the above functions are invoked with or return 2-tuples consisting of a 
 
 ## Conclusion
 
-And that's it. A small number of concepts and a tiny runtime providing a flexible framework suitable for small to medium applications. The universal use of pure functions with side effects managed separately effects makes testing relatively easy without mocking or stubbing. Functional programming also reduces the need for other techniques like dependency injection.
+And that's it. A small number of concepts and a tiny runtime make hyoperapp a flexible framework suitable for small to medium applications. The universal use of pure functions with side effects managed separately effects makes testing relatively easy without mocking or stubbing. Functional programming also reduces the need for other techniques like dependency injection.
 
 So that's hyperapp. Do have a look at the [examples](https://github.com/jorgebucaran/hyperapp/blob/master/docs/examples.md) and have a play. You only need an editor, a browser and possibly a local server (eg `npx serve`). Just like to "good old days" of web development.
 
