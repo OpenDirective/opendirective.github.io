@@ -31,7 +31,7 @@ There is a single state tree for the entire app and is only ever mutated in acti
 
 ## VDOM
 
-Hyperapp includes it's own Virtual DOM. As usually this allows the view to describe the entire User Interface and the VDOM ensure only yhte parts that have changed afer updated in the DOM.
+Hyperapp includes it's own Virtual DOM. As usual, this allows the view to describe the entire User Interface using virtual DOM nodes and the VDOM ensure only the nodes that have changed are updated in the DOM.
 
 ## View
 
@@ -55,7 +55,7 @@ Most of the above functions are invoked with or return 2-tuples consisting of a 
 
 ## Conclusion
 
-And that's it. A small number of concepts and a tiny runtime make hyoperapp a flexible framework suitable for small to medium applications. The universal use of pure functions with side effects managed separately effects makes testing relatively easy without mocking or stubbing. Functional programming also reduces the need for other techniques like dependency injection.
+And that's it. A small number of concepts and a tiny runtime make hyperapp a flexible framework suitable for small to medium applications. The universal use of pure functions with side effects managed separately effects makes testing relatively easy without mocking or stubbing. Functional programming also reduces the need for other techniques like dependency injection.
 
 So that's hyperapp. Do have a look at the [examples](https://github.com/jorgebucaran/hyperapp/blob/master/docs/examples.md) and have a play. You only need an editor, a browser and possibly a local server (eg `npx serve`). Just like to "good old days" of web development.
 
