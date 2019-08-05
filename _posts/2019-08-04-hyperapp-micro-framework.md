@@ -1,7 +1,11 @@
 ---
 layout: post
-title: Hyperapp: the frontend development framework your users might appreciate
+title: Hyperapp, the frontend web framework your users might appreciate
 ---
+
+<div class="message">
+Hyperapp is a framework for building web interfaces and ideal for when you don't want a full-blow framework and maybe for when you do.
+</div>
 
 Right now is a "fascinating" time to be a frontend web developer. There's plenty of interesting tools and frameworks to help improve the developer experience and provide nice rich user experiences, albeit often with a steep developer learning curve.
 
