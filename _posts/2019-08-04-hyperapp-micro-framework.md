@@ -37,21 +37,21 @@ Hyperapp includes it's own Virtual DOM. As usual, this allows the view to descri
 
 Maps the state to the User Interface using the VDOM `h()` function to build virtual HTML nodes. As usual, if you prefer, you can use abstractions including `hyperapp/html` (or equivalent) helper functions for each HTML element, `JSX` build time parsed HTML-like syntax or `hyperx` template strings parsed at run time.
 
+## Tuples
+
+Many of the hyperapp functions can be invoked with or return 2-tuples consisting of a function and a parameter. As JavaScript doesn't have tuples, arrays of 2 elements are used.
+
 ## Actions
 
-Functions that are called as the result of user actions and which update the state. They abstract DOM events and are passed the current state, returning the new state.
+Functions that are called as the result of user actions bound to DOM handlers and which update the state or invoke an effect. They abstract DOM events and are passed the current state, returning the new state or effect tuple.
 
 ## Subscriptions
 
-Functions similar to Actions that are called when an external event occurs. For example timers, HTTP server responses and global DOM events.
+Functions similar to Actions that are called when an external event occurs. For example timers or global DOM events.
 
 ## Effects (fx)
 
-Functions that perform all side effects letting us use pure functions elsewhere. They are passed the effect to perform as a function and a parameter / payload. Thus they are effectively "drivers" encapsulating side effects and all have the same API (similar to ioctrl).
-
-## Tuples
-
-Most of the above functions are invoked with or return 2-tuples consisting of a function and a parameter. As JavaScript doesn't have tuples, arrays are used.
+Functions that perform all side effects letting us use pure functions elsewhere. They are passed the effect to perform as a function and a parameter / payload. Thus they are effectively "drivers" encapsulating side effects and all have the same API (similar to ioctrl). THey are good for creating an HTTP request, giving focus to an element, saving data to local storage, sending data over a WebSocket, etc., without executing any code
 
 ## Conclusion
 
