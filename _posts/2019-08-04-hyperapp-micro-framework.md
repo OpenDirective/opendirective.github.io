@@ -23,11 +23,11 @@ With this no-framework approach you will most likely develop architectural patte
 
 Hyperapp V2 has almost landed; it's on master in github but the npm has not been published. While the docs are not quite available yet the [source code](https://github.com/jorgebucaran/hyperapp) is small and relatively easy to digest. Of the 500 odd lines of code, the first 400 are taken up with the [Virtual DOM](https://reactjs.org/docs/faq-internals.html) implementation and can be ignored if you want to concentrate on the framework proper. There is also a set official [examples](https://github.com/jorgebucaran/hyperapp/blob/master/docs/examples.md) and an implementation of [the 7GUIs](https://github.com/zaceno/sevenguis-hyperapp).
 
-Here's an overview of the few elements of Hyperapp - they are mosty just functions as you'd expect in a functional programming framework
+Here's an overview of the few elements that make up Hyperapp. They are mosty just functions as you'd expect in a functional programming framework
 
 ## State
 
-There is a single state tree for the entire app and is only ever mutated in actions or subscriptions, never directly. Note however, you can mount multiple apps into a HTML page if required.
+There is a single state tree for the entire app and is only ever mutated in actions or subscriptions, never directly. Note however, you can mount multiple apps with their own state trees if required.
 
 ## VDOM
 
@@ -39,7 +39,7 @@ Maps the state to the User Interface using the VDOM `h()` function to build virt
 
 ## Actions
 
-Functions that are called as the result of user actions. They abstract DOM events and are passed the current state, returning the new state.
+Functions that are called as the result of user actions and which update the state. They abstract DOM events and are passed the current state, returning the new state.
 
 ## Subscriptions
 
@@ -55,7 +55,7 @@ Most of the above functions are invoked with or return 2-tuples consisting of a 
 
 ## Conclusion
 
-And that's it. A small number of concepts and a tiny runtime make hyperapp a flexible framework suitable for small to medium applications. The universal use of pure functions with side effects managed separately effects makes testing relatively easy without mocking or stubbing. Functional programming also reduces the need for other techniques like dependency injection. As there's so few moving parts, hyperapp is fertile ground for developing your own abstractions and patterns that perfectly fit your specific problem domain.
+And that's it. A small number of concepts and a tiny runtime make hyperapp a flexible framework suitable for small to medium applications. The universal use of pure functions with side effects managed separately makes unit and integration testing relatively easy without mocking or stubbing. Functional programming also reduces the need for other techniques like dependency injection. As there's so few moving parts, hyperapp is fertile ground for developing your own abstractions and patterns that perfectly fit your specific problem domain.
 
-So that's hyperapp. Do have a look at the [examples](https://github.com/jorgebucaran/hyperapp/blob/master/docs/examples.md) and have a play. You only need an editor, a browser and possibly a local server (eg `npx serve`). Just like to "good old days" of web development.
+So that's hyperapp. Do have a look at the [examples](https://github.com/jorgebucaran/hyperapp/blob/master/docs/examples.md) and have a play. You only need an editor, a browser and possibly a local server (eg `npx serve`). Just like the "good old days" of web development.
 
