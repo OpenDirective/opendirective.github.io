@@ -63,7 +63,7 @@ A way to attach Actions to events not specified with DOM node event handlers in 
 
 In fact, Subscriptions are Effects as they are defined by the framework processing a Tuple, but they are enhanced with the ability to pass events back via the dispatch function that is passed when they are setup. For example Subscription Effect can send a HTTP request and later return the result or a timeout.
 
-The array of Subscriptions is passed to the App by a function which is called whenever the State changes. This function is passed the State and returns an array of subscriptions. If subscriptions appear in the array, they are setup and if they are removed they are torn down. Thus subscription can vary depending on the State.
+The array of Subscriptions is passed to the App by a function which is called whenever the State changes. This function is passed the State and returns an array of subscriptions. If subscriptions appear in the array, they are setup and if they are removed they are torn down. Thus, Subscriptions can vary depending on the State.
 
 This may seem a little complex so see the [Clock example](https://github.com/jorgebucaran/hyperapp/blob/master/docs/examples.md#simple-clock) which uses [hyperapp/time](https://github.com/SteveALee/hyperapp/blob/master/lib/time/src/index.js) 'interval' effect.
 
