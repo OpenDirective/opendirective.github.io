@@ -53,15 +53,15 @@ References to an Action can be declared as the function itself (name or inline) 
 
 ## Effects (fx)
 
-Effects are functions that perform side effects for the App. They can be thought of as "drivers" that perform all the external work such as calling a RESTful API endpoint, giving focus to an element or saving data to local storage. This way the Actions remain pure functions which simplifies reasoning about logic and eases testing.
+Effects are functions that perform side effects for the App. They can be thought of as "drivers" that perform all the external work such as calling a RESTful API endpoint, giving focus to an element or saving data to local storage. This way, Actions remain pure functions which simplifies testing and reasoning about logic.
 
-Effects are invoked from Actions when they return a Tuple of the effect to perform as a function and an argument.
+Effects are invoked from Actions when they return a Tuple of the effect to perform as a function and an argument. Effects can invoke an Action asynchronously later.
+
+The module [hyperapp-fx](https://github.com/okwolf/hyperapp-fx/blob/HAv2/api.md) contains many useful Effects.
 
 ## Subscriptions
 
-A way to attach Actions to events not specified with DOM node event handlers in the view.  For example, global DOM events or side effects such as timers. A Subscription is a Tuple of a function to call to set up the subscription and a props object passed as a parameter to the function. The setup function is also passed a dispatch function that it uses to 'send' the event to hypeapp. In addition, the setup function returns the function that hyperapp can call to teardown the subscription when it is no longer needed.
-
-In fact, Subscriptions are Effects as they are defined by the framework processing a Tuple, but they are enhanced with the ability to pass events back via the dispatch function that is passed when they are setup. For example Subscription Effect can send a HTTP request and later return the result or a timeout.
+Subscriptions alow Actions to be called in response to external events that are not tied to a DOM node in the view. For example, global DOM events or even side effects such as timers. A Subscription is a Tuple of a function to set up the subscription and a props object passed as a parameter to the function. The setup function is also passed a dispatch function that it uses to 'send' the event to hypeapp. In addition, the setup function returns the function that hyperapp can call to teardown the subscription when it is no longer needed.
 
 The array of Subscriptions is passed to the App by a function which is called whenever the State changes. This function is passed the State and returns an array of subscriptions. If subscriptions appear in the array, they are setup and if they are removed they are torn down. Thus, Subscriptions can vary depending on the State.
 
