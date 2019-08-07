@@ -23,7 +23,7 @@ With this no-framework approach it's usual to develop architectural patterns and
 
 Version 2 of the tiny Hyperapp framework has almost landed; it's on master in github but the npm package has not yet been published. While the docs are not quite available yet the [source code](https://github.com/jorgebucaran/hyperapp) is small and relatively easy to digest. Of the 500 odd lines of source code, the first 400 are taken up with the [Virtual DOM](https://reactjs.org/docs/faq-internals.html) implementation and can be ignored if you want to concentrate on the framework proper. There is also a set of official [examples](https://github.com/jorgebucaran/hyperapp/blob/master/docs/examples.md), plus [an implementation](https://github.com/zaceno/sevenguis-hyperapp) of [the 7GUIs](https://eugenkiss.github.io/7guis/) sample apps.
 
-Here's an overview of the few elements that make up Hyperapp. They are mostly just functions as you'd expect in a functional programming framework
+Here's an overview of the few elements that make up Hyperapp. They are mostly just functions as you'd expect in a functional programming framework. See the example app at the end of this post.
 
 ## App
 
@@ -74,6 +74,31 @@ As Actions remain pure they cannot use `promises` or `async` but these features 
 
 ## Conclusion
 
-And that's it. A small number of concepts and a tiny runtime make hyperapp a flexible framework suitable for small to medium applications. The universal use of pure functions with side effects managed separately makes unit and integration testing relatively easy without mocking or stubbing. As there are so few moving parts, hyperapp is fertile ground for developing your own abstractions and patterns that perfectly fit your specific problem domain.
+And that's it. Hyperapp's few concepts and the tiny runtime make it a flexible framework, suitable for small to medium applications. The universal use of pure functions with side effects separated out also makes unit, business logic and integration testing managable. The use of Mocks and Stubs are confined to the Effects, making life much simpler. Finally, hyperapp provides a minimal foundation for building on further abstractions and patterns that perfectly model the current project domain.
 
-So that's hyperapp. Do have a look at the [examples](https://github.com/jorgebucaran/hyperapp/blob/master/docs/examples.md) and have a play. You only need an editor, a browser and possibly a local server (eg `npx serve`). Just like the "good old days" of web development.
+Try the [examples](https://github.com/jorgebucaran/hyperapp/blob/master/docs/examples.md) and have a play. You only need an editor, a browser and possibly a local server (eg `npx serve`). Just like the "good old days" of web development. Try this...
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script type="module">
+      import { h, app } from "https://unpkg.com/hyperapp"
+
+      app({
+        init: 0,
+        view: state =>
+          h("div", {}, [
+            h("h1", {}, state),
+            h("button", { onClick: state => state - 1 }, "-"),
+            h("button", { onClick: state => state + 1 }, "+")
+          ]),
+        node: document.getElementById("app")
+      })
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>
+```
