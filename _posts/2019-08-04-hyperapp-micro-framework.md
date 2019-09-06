@@ -8,6 +8,7 @@ Hyperapp is a framework for building web interfaces and ideal for when you don't
 </div>
 
 **[UPDATE 2019/08/07: Added example at end]**
+**[UPDATE 2019/09/06: Added link to Cypress explorer]**
 
 Right now is a "fascinating" time to be a frontend web developer. There's plenty of interesting tools and frameworks to help ease the developer experience while providing rich user experiences. The downside can be the steep developer learning curve with complex configurations.
 
@@ -25,7 +26,32 @@ With this no-framework approach it's usual to develop architectural patterns and
 
 Version 2 of the tiny Hyperapp framework has almost landed; it's on master in github but the npm package has not yet been published. While the docs are not quite available yet the [source code](https://github.com/jorgebucaran/hyperapp) is small and relatively easy to digest. Of the 500 odd lines of source code, the first 400 are taken up with the [Virtual DOM](https://reactjs.org/docs/faq-internals.html) implementation and can be ignored if you want to concentrate on the framework proper. There is also a set of official [examples](https://github.com/jorgebucaran/hyperapp/blob/master/docs/examples.md), plus [an implementation](https://github.com/zaceno/sevenguis-hyperapp) of [the 7GUIs](https://eugenkiss.github.io/7guis/) sample apps.
 
-Here's an overview of the few elements that make up Hyperapp. They are mostly just functions as you'd expect in a functional programming framework. See the example app at the end of this post.
+Here's an overview of the few elements that make up Hyperapp. They are mostly just functions as you'd expect in a functional programming framework. Here is a simple counter app example example app, also show at the end of this post.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script type="module">
+      import { h, app } from "https://unpkg.com/hyperapp"
+
+      app({
+        init: 0,
+        view: state =>
+          h("div", {}, [
+            h("h1", {}, state),
+            h("button", { onClick: state => state - 1 }, "-"),
+            h("button", { onClick: state => state + 1 }, "+")
+          ]),
+        node: document.getElementById("app")
+      })
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>
+```
 
 ## App
 
@@ -104,3 +130,7 @@ Try the [examples](https://github.com/jorgebucaran/hyperapp/blob/master/docs/exa
   </body>
 </html>
 ```
+
+## Exploring with Cypress
+
+The [cypress](https://www.cypress.io/) test platform makes an ideal tool for exploring code that runs in a browser. This [hyperapp explorer](https://github.com/SteveALee/hyperapp2-explore) lets you play with the code and expands on the API description here.
