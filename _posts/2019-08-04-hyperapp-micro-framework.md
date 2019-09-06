@@ -7,7 +7,8 @@ title: Hyperapp, the frontend web framework your users might appreciate
 Hyperapp is a framework for building web interfaces and ideal for when you don't want a full-blow framework (and perhaps for when you do).
 </div>
 
-**[UPDATE 2019/08/07: Added example at end]**
+**[UPDATE 2019/08/07: Added example]**
+
 **[UPDATE 2019/09/06: Added link to Cypress explorer]**
 
 Right now is a "fascinating" time to be a frontend web developer. There's plenty of interesting tools and frameworks to help ease the developer experience while providing rich user experiences. The downside can be the steep developer learning curve with complex configurations.
