@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Is svelte.js the user-friendly developer framework
+title: Is svelte.js the user-friendly developer framework?
 ---
 
 <div class="message">
@@ -29,6 +29,6 @@ One final impressive "feature" of svelte is the excellent resources svelte's dev
 
 Svelte is relatively young but with a well led and fairly small community. Even so, it is poised to have a big impact. In fact, I just saw it prominently featured in the 'State of JavaScript' survey results, taking pride of place next to the big popular frameworks. Watch this space!
 
-Finally, I explored much of svelte by developing an inclusive [random number "spinner" app](https://github.com/SteveALee/svelte-donut-spinner) as a fairly non-trivial sample. This might be useful as an example, in addition to the many other resources linked to from [the svelte website](https://svelte.dev/). Svelte has a related project, [sapper](https://sapper.svelte.dev/), which adds features required in a SPA and server side rendering with hydration of the frontend.
+I explored much of svelte by developing an inclusive [random number "spinner" app](https://github.com/SteveALee/svelte-donut-spinner) as a fairly non-trivial sample. This might be useful as an example, in addition to the many other resources linked to from [the svelte website](https://svelte.dev/). Svelte has a related project, [sapper](https://sapper.svelte.dev/), which adds features required in a SPA and server side rendering with hydration of the frontend.
 
 Recently, Jason Lengstorf [learnt svelte with Richard Harris](https://www.learnwithjason.dev/let-s-learn-svelte) a process that's fun and informative to watch.
