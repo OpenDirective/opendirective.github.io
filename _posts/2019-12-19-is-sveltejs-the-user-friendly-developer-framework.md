@@ -7,9 +7,9 @@ title: Is svelte.js the user-friendly developer framework?
 Svelte provides an excellent Developer Experience (DX) whilst supporting a slick User Experience (UX), even on low powered devices. It does this through performing as much work as possible at build-time resulting in tight minimal code that when deployed directly interacts with the web platform in the browser.
 </div>
 
-In my [last post on hyperapp](./2019-08-04-hyperapp-micro-framework) I explained its interest in terms of avoiding user frustration with slow performance of websites, often due to heavy reliance on a lot of javascript. Hyperapp is a tiny payload and is reasonably fast so can deliver a good UX on many older devices and even poor connectivity as often experienced by mobile users.
+In my [last post on hyperapp](/2019/08/04/hyperapp-micro-framework/) I explained its interest in terms of avoiding user frustration with slow performance of websites, often due to heavy reliance on a lot of javascript. Hyperapp is a tiny payload and is reasonably fast so can deliver a good UX on many older devices and even poor connectivity as often experienced by mobile users.
 
-Svelte also provides excellent UX performance but it does this by eschewing the currently popular dev friendly runtime VDOM technique, which may negatively impact the UX on all but the best devices. Svelte does this by using a compiler providing build-time generation of 'laser'precise' UI code that acts directly with the browser DOM and BOM APIs.
+Svelte also provides excellent UX performance but it does this by eschewing the currently popular dev friendly runtime VDOM technique, which may negatively impact the UX on all but the best devices. Svelte does this by using a compiler providing build-time generation of 'laser' precise' UI code that acts directly with the browser DOM and BOM APIs.
 
 Additional improvements in speed and reliability can be gained through svelte's use of templated component markup. This transparently supports Progressive Enhancement (PE) of browser processed and reliable HTML with CS with a developer adding extended behaviours with the more fragile JavaScript.
 
