@@ -4,7 +4,7 @@ title: Open communication with symbols
 ---
 
 <div class="message">
-Many people without speech use symbols everyday to aid or enable communication with others. The current COVID pandemic means more find themselves literally speechless while on breathing support such as CPAP or imply too weak to speak. Fortunately there are a growing number of free or open symbols sets and apps.
+Many people without speech use symbols everyday to aid or enable communication with others. The current COVID pandemic means more poeple now find themselves literally speechless while on breathing support such as CPAP or simply too weak to speak. Fortunately there is a growing number of free or open symbols sets and apps.
 </div>
 
 ## AAC
