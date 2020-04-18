@@ -9,19 +9,19 @@ Many people without speech use symbols each and everyday to aid or enable commun
 
 ## AAC
 
-Augmentative and Alternative Communication (AAC) is a term that describes a set of techniques and tools that support people who have difficulties communicating, especially if they do not have speech. Such difficulties may result from congenital disabilities such as Cerebral Palsey or may be acquired, for example Aphasia caused by a stroke. The basic idea of AAC is to create printed or interactive electronic grids of symbols that capture common needs or thoughts that a person may wish to communicate. The symbols may be use individually or strung into sentences by the user either pointing to them with a finger or by looking at them (eye pointing). Low tech versions are printed on paper and high tech solutions use 'eye tracking' and speech synthesis.
+Augmentative and Alternative Communication (AAC) is a term that describes a set of techniques and tools that support people who have difficulties communicating, especially if they do not have speech. Such difficulties may result from congenital disabilities such as Cerebral Palsey or may be acquired, for example Aphasia caused by a stroke. The basic idea of AAC is to create printed or interactive electronic grids of symbols that capture common needs or thoughts that a person wants to communicate. The symbols may be use individually or strung into sentences by the user either pointing to them with a finger or by looking at them (eye pointing). Low tech versions are printed on paper and high tech solutions use 'eye tracking' and speech synthesis.
 
-The common serious health impact of COVID19 has resulted in more people who find themselves unable to easily express their wishes or communicate with loved ones. While there are several proprietary AAC tools on the market there is also a growing number of free and open solutions. This is important as the experts in distilling the entire language needs of someone into a usable set of charts of symbols are Speech and Language Therapists ("SALT"s in the UK) and they are more often or not running on a "shoestring" budget (like most of our Health and Social Care sectors).
+The common serious health impact of COVID19 has resulted in more people who find themselves unable to easily express their wishes or communicate with loved ones. While there are several proprietary AAC tools on the market there is also a growing number of free and open solutions. This is important as the experts in distilling the entire language needs of someone into a usable set of charts of symbols, Speech and Language Therapists ("SALT"s in the UK), are more often than not running on a "shoestring" budget (like most of our Health and Social Care sectors).
 
 ## Mulberry Symbols
 
-Some time ago a took over stewardship of the [Mulberry Symbols](https://mulberrysymbols.org/) which in addition to providing symbols aimed at adult users which are often unavailable in proprietary sets, are also low cost and freely sharable or modifiable. They are thus also compatible with flexible online use.
+Some time ago I took over stewardship of the [Mulberry Symbols](https://mulberrysymbols.org/) which in addition to providing symbols aimed at adult users which are often unavailable in proprietary sets, are also low cost and freely sharable or modifiable. They are thus also compatible with flexible online use.
 
 One of key questions in my mind is how can we make sure that SALTs can easily choose and use the symbols they want for users. While we provide a [downloadable zip archive](https://mulberrysymbols.org/#downloads) of all the symbol files they can be fiddly to create boards with. We also have a slightly "hacky" way to download individual symbols.
 
 Print boards are usually made using a word processor or presentation software and the symbols then have to be inserted or dragged into place and then scaled. Use in AAC apps often involves other complexities, including the need to transform the symbols into a format that the app will accept. The Symbols also come with English names which makes it difficult to find and use in other languages. We do have a file mapping to Finnish names.
 
-While we could expand the options for accessing and using Mulberry Symbols there are fortunately a growing [number of open solutions](https://mulberrysymbols.org/#the-symbols-in-use) that help address these issues.
+While we could expand the options for accessing and using Mulberry Symbols there are fortunately a growing ecosystem of [open solutions](https://mulberrysymbols.org/#the-symbols-in-use) that help address these issues.
 
 ## The Open Symbols ecosystem
 
