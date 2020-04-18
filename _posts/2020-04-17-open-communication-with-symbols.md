@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-hidden
 title: Open Communication with Symbols
 ---
 
