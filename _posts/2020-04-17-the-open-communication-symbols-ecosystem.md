@@ -15,7 +15,9 @@ The common serious health impact of COVID19 has resulted in more people who find
 
 ## Mulberry Symbols
 
-Some time ago a took over stewardship of the [Mulberry Symbols](https://mulberrysymbols.org/) which in addition to providing symbols aimed at adult users which are often unavailable in proprietary sets, are also low cost and freely sharable or modifiable. One of key questions in my mind is how can we make sure that SALTs can easily choose and use the symbols they want for users. While we provide a [downloadable zip archive](https://mulberrysymbols.org/#downloads) of all the symbol files they can be fiddly to create boards with. We also have a slightly "hacky" way to download individual symbols.
+Some time ago a took over stewardship of the [Mulberry Symbols](https://mulberrysymbols.org/) which in addition to providing symbols aimed at adult users which are often unavailable in proprietary sets, are also low cost and freely sharable or modifiable. They are thus also compatible with flexible online use.
+
+One of key questions in my mind is how can we make sure that SALTs can easily choose and use the symbols they want for users. While we provide a [downloadable zip archive](https://mulberrysymbols.org/#downloads) of all the symbol files they can be fiddly to create boards with. We also have a slightly "hacky" way to download individual symbols.
 
 Print boards are usually made using a word processor or presentation software and the symbols then have to be inserted or dragged into place and then scaled. Use in AAC apps often involves other complexities, including the need to transform the symbols into a format that the app will accept. The Symbols also come with English names which makes it difficult to find and use in other languages. We do have a file mapping to Finnish names.
 
@@ -33,7 +35,7 @@ Open Source projects traditionally have very good internationalisation support a
 
 One App that makes the most of OBF is [BoardBuilder](https://globalsymbols.com/boardbuilder) from Global Symbols which allows you to create and modify boards, print them or export in the OBF format for use in AAC apps. A number of [sample boards](https://blog.globalsymbols.com/en/resources/symbolcharts/) are also provided.
 
-**Creating and modifying Symbols** - Symbols sets are never complete and the users probably want individualised symbols. After all, symbols are often a person's main or only language so they want them personal. Open Symbols provide an opportunity for community collaboration on symbols through the flexible permissive licenses that allow free modification, possibly with the codition to share new symbols under the same licence. It's generally also good manners to provide new derived symbols back to the original project so others can benefit. Global symbols also provide a little online [symbol creator](https://blog.globalsymbols.com/en/create-symbols/) tool.
+**Creating, modifying and Sharing Symbols** - Symbols sets are never complete and the users probably want individualised symbols. After all, symbols are often a person's main or only language so they want them personal. Open Symbols provide an opportunity for community collaboration on symbols through the flexible permissive licenses that allow free modification, possibly with the condition to share new symbols under the same licence. It's generally also good manners to provide new derived symbols back to the original project so others can benefit. Global symbols also provide a little online [symbol creator](https://blog.globalsymbols.com/en/create-symbols/) tool.
 
 **AAC Apps** - Both [Cboard](https://www.cboard.io/) and [Coughdrop](https://www.coughdrop.com/) are full featured Open Source AAC Apps. They support OBF and 'books' of connected boards where a symbol in one board links to another board, allowing for complex symbol collections. both provide speech output of sentences built with symbols.
 
