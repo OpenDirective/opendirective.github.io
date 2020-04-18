@@ -9,9 +9,11 @@ Many people without speech use symbols each and everyday to aid or enable commun
 
 ## AAC
 
-Augmentative and Alternative Communication (AAC) is a term that describes a set of techniques and tools that support people who have difficulties communicating, especially if they do not have speech. Such difficulties may result from congenital disabilities such as Cerebral Palsey or may be acquired, for example Aphasia caused by a stroke. The basic idea of AAC is to create printed or interactive electronic grids of symbols that capture common needs or thoughts that a person wants to communicate. The symbols may be use individually or strung into sentences by the user either pointing to them with a finger or by looking at them (eye pointing). Low tech versions are printed on paper and high tech solutions use 'eye tracking' and speech synthesis.
+Augmentative and Alternative Communication (AAC) is a term that describes a set of techniques and tools that support people who have difficulties communicating, especially if they do not have speech. Such difficulties may result from congenital disabilities such as Cerebral Palsey or may be acquired, for example Aphasia caused by a stroke.
 
-The common serious health impact of COVID19 has resulted in more people who find themselves unable to easily express their wishes or communicate with loved ones. While there are several proprietary AAC tools on the market there is also a growing number of free and open solutions. This is important as the experts in distilling the entire language needs of someone into a usable set of charts of symbols, Speech and Language Therapists ("SALT"s in the UK), are more often than not running on a "shoestring" budget (like most of our Health and Social Care sectors).
+The basic idea of AAC is to create printed or interactive electronic grids of symbols that capture common needs or thoughts that a person wants to communicate. The symbols may be use individually or strung into sentences by the user either pointing to them with a finger or by looking at them (eye pointing). Low tech versions are printed on paper and high tech solutions use 'eye tracking' and speech synthesis.
+
+COVID19 has resulted in more people finding themselves unable to easily express their wishes or communicate with loved ones. While there are several proprietary AAC tools to support them there is also a growing number of free and open solutions. This is important as the experts in distilling the entire language needs of someone into a usable set of charts of symbols, Speech and Language Therapists ("SALT"s in the UK), are more often than not running on a "shoestring" budget (like most of our Health and Social Care sectors).
 
 ## Mulberry Symbols
 
