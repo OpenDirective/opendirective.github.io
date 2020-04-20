@@ -27,6 +27,10 @@ While we could expand the options for accessing and using Mulberry Symbols there
 
 ## The Open Symbols ecosystem
 
+**Global Symbols** - [Global Symbols](https://blog.globalsymbols.com) collects and creates free and open AAC symbol sets, tools and resources. The Linguistically and culturally localised resources provide world wide access to appropriate pictographic based communication. Several of the resources described below are provided by Gobal Symbols
+
+**Open AAC** - The [Open AAC](https://www.openaac.org/) initiative exists to create and encourage open-licensed resources and tools to support AAC users. It introduces a number of key concepts including the Open Board Format discussed below.
+
 **Finding Symbols** - Both [Global Symbols](https://blog.globalsymbols.com) and [Open Symbols](https://www.opensymbols.org/) provide online tools for exploring, selecting and downloading symbols from a range of open sets, including Mulberry. Some symbols are also available in multiple languages They also offer other facilities for editing symbols or providing associated meta data.
 
 **Internationalisation and Localisation** - This gets a little complex. Some symbol sets are have symbols names in a specific language and the symbols might be culturally specific. A good example is the Tawasol Arabic set. If a symbol set is to be more globally useful then the names need to be available in multiple languages and some of the symbols will need alternatives. In fact some symbols may only be required for some cultures. And remember, culture and language are often not the same thing. Practically the symbols should be searchable across range of languages and cultures.
@@ -40,8 +44,6 @@ One App that makes the most of OBF is [BoardBuilder](https://globalsymbols.com/b
 **Creating, modifying and Sharing Symbols** - Symbols sets are never complete and the users probably want individualised symbols. After all, symbols are often a person's main or only language so they want them personal. Open Symbols provide an opportunity for community collaboration on symbols through the flexible permissive licenses that allow free modification, possibly with the condition to share new symbols under the same licence. It's generally also good manners to provide new derived symbols back to the original project so others can benefit. Global symbols also provide a little online [symbol creator](https://blog.globalsymbols.com/en/create-symbols/) tool.
 
 **AAC Apps** - Both [Cboard](https://www.cboard.io/) and [Coughdrop](https://www.coughdrop.com/) are full featured Open Source AAC Apps. They support OBF and 'books' of connected boards where a symbol in one board links to another board, allowing for complex symbol collections. both provide speech output of sentences built with symbols.
-
-**Open AAC** - The [Open AAC](https://www.openaac.org/) initiative exists to create and encourage open-licensed resources and tools to support AAC users. It introduces a number of key concepts including the Open Board Format discussed above.
 
 **Training** - Creating usable boards is a skill requiring understanding of language and more. Fortunately, Global Symbols have created a number of free [training resources](https://training.globalsymbols.com/) in collaboration with UNICEF.
 
