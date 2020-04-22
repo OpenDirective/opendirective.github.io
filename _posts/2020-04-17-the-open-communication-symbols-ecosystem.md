@@ -49,4 +49,4 @@ One App that makes the most of OBF is [BoardBuilder](https://globalsymbols.com/b
 
 ## Come Join Us
 
-So in summary, there is a growing ecosystem of open symbols and tools. Not only do these provide low cost solutions but they also enable collaborative community development so we can better support AAC users. This will work best when we have collaborators involved with all aspects of creating and using symbols. Please join us!
+So in summary, there is a growing ecosystem of open symbols and tools. Not only do these provide low cost solutions but they also enable collaborative community development so we can better support AAC users. This will work best when we have collaborators involved with all aspects of creating and using symbols. Please join us! Here's the  [Open AAC slack channel](https://join.slack.com/t/openaac/shared_invite/enQtNTQwNDgwODYyNjU5LTAwODNmZjM4ZmJmOTJkYTY2MWZkNjc0MDQ0NTcwMTRmMzY0MWI3OWJiNGYwZGIzMzc2YTk2N2FiY2JlYTI5Njc).
