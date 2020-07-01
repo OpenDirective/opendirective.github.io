@@ -4,7 +4,7 @@ title: Music Practice Tools
 ---
 
 <div class="message">
-As an adult learner of bass guitar I find there's much to get to grips with. In addition to instrument technique there's a raft of musicality skills. As a confirmed geek I've long though about various tool projects using the web platform which is now very musically capable. Then COVID hit us and lessons became remote, requiring distant sharing of information. Add in thoughts of keeping a musical journal and [musicpracticetools.net](https://musicpracticetools.net) was born.
+As an adult learner of bass guitar I find there's much to get to grips with. In addition to instrument technique there's a raft of musicality skills. As a confirmed geek I've long thought about various neat tool projects using the web platform which is now very musically capable. And then COVID hit us and my lessons became remote, requiring distant sharing of information. Add to that my aspirations of keeping a musical journal and [musicpracticetools.net](https://musicpracticetools.net) was born.
 </div>
 
 ## Tools for practice and remote lessons
@@ -37,9 +37,13 @@ Now what about the musical widgets using the web platform? Many moons ago when I
 
 And then there's [abcjs](https://paulrosen.github.io/abcjs/) based on the text musical score language semi-standard [abc](http://abcnotation.com/wiki/abc:standard:v2.1#first_and_second_repeats). This adds the icing on the cake providing SVG "dots" that can also be played. The only wrinkle is there is no WYSIWYG editor but rather you describe the notes in the abc language. But thats fine with me and works OK in a publishing workflow.
 
+## making it
+
 Dev and Build is Nodejs based (what else these days) but only for server side 11ty. The client side is pure un-built un-bundled un-munged HTML, CSS and JavaScript (like your grandma used to make), using global scripts. And why not? it works just fine and I'll bundle etc if and when I need to. I did look at browser modules but there's a few quirks to solve (like modules aer defered which messes up code in the main html file)
 
 An what about deployment. Well, GitHub pages can be bent to work with out Jeckyl they have limitations. GitHub also has Actions now to provide Continuous Deployment and there's Zeit (I mean Vercel) now. But [Netlify](https://www.netlify.com/) really seem to call me with their good range of services and free pricing tier. They also support Serverless Functions for if/when we do need backend functionality. Netlify also have a CMS using GitHub for storage that would allow for an alternative in-browser editing / admin UI if ever required.
+
+## Outro
 
 So there we have it. A perfectly serviceable stack for a slightly left-field blog/journal/app thing. So far it has  proven more than adequate. I create widgets using client side Javascript, sometimes with Alpine, and 11ty shortcodes to make the markdown page editing experience quick and clean. That required a little trick with nodemono and browsersync to get watched rebuild of the shortcodes but works really well. We're really lucky to have so much great open source software to build on. Hopefully this adds a little something to that.
 
