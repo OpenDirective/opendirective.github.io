@@ -4,7 +4,7 @@ title: Music Practice Tools
 ---
 
 <div class="message">
-As an adult learner of bass guitar I find there's much to get to grips with. In addition to instrument technique there's a raft of musicality skills to work on. As a confirmed geek I've long thought about various neat tool projects using the web platform which is now very musically capable thanks to the Web Audio API. And then COVID hit us and my lessons became remote, requiring distant sharing of information. Add to that my aspirations of keeping a musical journal and [musicpracticetools.net](https://musicpracticetools.net) was born.
+As an adult learner of bass guitar I find there's much to get to grips with. In addition to instrument technique there's a raft of musicality skills to work on. As a confirmed geek I've long thought about various neat tool projects using the web platform which is now very musically capable thanks to the Web Audio API. And then COVID hit us and my lessons became remote, requiring distant sharing of information. Add to that my aspirations of keeping a musical journal and <a href=""https://musicpracticetools.net">musicpracticetools.net</a> was born.
 </div>
 
 ## Tools for practice and remote lessons
@@ -45,7 +45,7 @@ An what about deployment? Well, GitHub pages can be bent to work without Jeckyl 
 
 ## Outro
 
-So there we have it. A perfectly serviceable stack for a slightly left-field blog/journal/app thing. So far it has  proven more than adequate. I create widgets using client side Javascript, sometimes with Alpine, and 11ty shortcodes to make the markdown page editing experience quick and clean. That required a little trick with nodemono and browsersync to get watched rebuild of the shortcodes but works really well. 
+So there we have it. A perfectly serviceable stack for a slightly left-field blog/journal/app thing. So far it has  proven more than adequate. I create widgets using client side Javascript, sometimes with Alpine, and 11ty shortcodes to make the markdown page editing experience quick and clean. That required a little trick with nodemono and browsersync to get watched rebuild of the shortcodes but works really well.
 
 Here's an example daily [practice page](https://github.com/music-practice-tools/music-practice-tools/blob/7c5b1ad3ec845e859e543f5fabd786c39a16338c/pages/activities/daily.md) as created and a [tune page](https://github.com/music-practice-tools/music-practice-tools/blob/7c5b1ad3ec845e859e543f5fabd786c39a16338c/pages/tunes/the-thrill-is-gone.md).
 
