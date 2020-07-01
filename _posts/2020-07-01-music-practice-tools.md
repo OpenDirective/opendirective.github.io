@@ -4,7 +4,7 @@ title: Music Practice Tools
 ---
 
 <div class="message">
-As an adult learner of bass guitar I find there's much to get to grips with. In addition to instrument technique there's a raft of musicality skills to work on. As a confirmed geek I've long thought about various neat tool projects using the web platform which is now very musically capable thanks to the Web Audio API. And then COVID hit us and my lessons became remote, requiring distant sharing of information. Add to that my aspirations of keeping a musical journal and <a href=""https://musicpracticetools.net">musicpracticetools.net</a> was born.
+As an adult learner of bass guitar I find there's much to get to grips with. In addition to instrument technique there's a raft of musicality skills to work on. As a confirmed geek I've long thought about various neat tool projects using the web platform which is now very musically capable thanks to the Web Audio API. And then COVID hit us and my lessons became remote, requiring distant sharing of information. Add to that my aspirations of keeping a musical journal and <a href="https://musicpracticetools.net">musicpracticetools.net</a> was born.
 </div>
 
 ## Tools for practice and remote lessons
