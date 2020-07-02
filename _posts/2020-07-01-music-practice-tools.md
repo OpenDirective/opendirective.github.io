@@ -41,7 +41,7 @@ And then there's [abcjs](https://paulrosen.github.io/abcjs/) based on the semi-s
 
 Dev and Build is Nodejs based (what else these days) but only for server side 11ty. The client side is pure un-built un-bundled un-munged HTML, CSS and JavaScript (like your grandma used to make), using global scripts. And why not? it works just fine and I'll bundle etc if and when I need to. I did look at browser modules but there's a few quirks to solve (like modules are deferred which messes up code in the main html file)
 
-An what about deployment? Well, GitHub pages can be bent to work without Jeckyl they have limitations. GitHub now has Actions  to provide Continuous Deployment and there's Zeit (I mean Vercel). But [Netlify](https://www.netlify.com/) really seem to call me with their good range of services, free pricing tier and community vibe. They also provide Serverless Functions for if/when we do need backend functionality. Netlify also have a CMS using GitHub for storage that would allow for an alternative in-browser editing / admin UI if ever required.
+And what about deployment? Well, while GitHub pages can be bent to work without Jekyll, they have limitations. GitHub now has Actions to provide Continuous Deployment (CD) etc. and there's Zeit (I mean Vercel). But [Netlify](https://www.netlify.com/) really seem to call me with their good range of services, free pricing tier and community vibe. They also provide Serverless Functions for if/when we do need backend functionality. Netlify have a headless CMS using GitHub for storage that would allow for an alternative in-browser editing / admin UI if that is ever required.
 
 ## Outro
 
