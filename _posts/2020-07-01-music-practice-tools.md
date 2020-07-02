@@ -47,7 +47,7 @@ And what about deployment? Well, while GitHub pages can be bent to work without 
 
 ## Outro
 
-So there we have it. A perfectly serviceable stack for a slightly left-field blog/journal/app thing. So far it has  proven more than adequate. I create widgets using client side Javascript, sometimes with Alpine, and 11ty shortcodes to make the markdown page editing experience quick and clean. That required a little trick with nodemon and browsersync to get a watched rebuild of the shortcodes but it works really well.
+So there we have it. A perfectly serviceable stack for a slightly left-field blog/journal/app thing. So far it has  proven more than adequate. I create widgets using client side Javascript, sometimes with Alpine, and 11ty shortcodes to make the markdown page editing experience quick and clean. Local dev of shortcodes with automatic browser update required a little trick with nodemon and browsersync but it works really well.
 
 Here's an example daily [practice page](https://github.com/music-practice-tools/music-practice-tools/blob/7c5b1ad3ec845e859e543f5fabd786c39a16338c/pages/activities/daily.md) as created and a [tune page](https://github.com/music-practice-tools/music-practice-tools/blob/7c5b1ad3ec845e859e543f5fabd786c39a16338c/pages/tunes/the-thrill-is-gone.md).
 
