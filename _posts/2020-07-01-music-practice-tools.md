@@ -29,7 +29,7 @@ Unlike web apps which have interactive settings, a blog has a definite "write an
 
 ## The Technical Stack
 
-It has to be easy create pages and publish and also include or develop new widgets. That means some sort of publishing framework that also supports client side components. While WordPress is an established solution I'd much prefer static hosting to n-tier dynamic architectures. There's plenty of static site generators and even the static generation options for component frameworks like Next, Nuxt and Svelte. In the end [11ty](https://www.11ty.dev/) won me over with it's light weight simplicity and flexibility. While it works with many template languages for creating pages, Mozilla's [nunjucks](https://mozilla.github.io/nunjucks/) offers most functionality in 11ty.
+It has to be easy create pages and publish and also include or develop new widgets. That means some sort of publishing framework that also supports client side components. While WordPress is an established solution I'd much prefer static hosting to n-tier dynamic architectures. There's plenty of static site generators and even the static generation options for component frameworks like Svelte, Next and Nuxt. In the end [11ty](https://www.11ty.dev/) won me over with it's light weight simplicity and flexibility. While it works with many template languages for creating pages, Mozilla's [nunjucks](https://mozilla.github.io/nunjucks/) offers most functionality in 11ty.
 
 For client side we need to create widgets that enhance the static content. I'm happy as a "pig in muck" crafting good ol' DOM manipulation myself but it does tend to quickly get tedious and "boiler-platey". So something is called for that helps without imposing the full overkill weight and fixed abstractions of a runtime framework like [insert your favourite here]. I'm keen to use svelte as I think it gets so much right, including minimal runtime. However, it is usually used for building complete apps with a single component tree and that's not what is wanted here. Svelte will build web components and that certainly a possibility, though at the expense of complicating the build process. There are other interesting lightweight client runtime-only possibilities including [Hyperapp](https://hyperapp.dev/) and [lit-element](https://lit-element.polymer-project.org/) but in the end I stumbled upon [alpinejs](https://github.com/alpinejs/alpine) via [Tailwind UI](https://tailwindui.com/) and it really hit's the sweet spot.
 
@@ -39,18 +39,18 @@ And then there's [abcjs](https://paulrosen.github.io/abcjs/) based on the semi-s
 
 ## Making it
 
-Dev and Build is Nodejs based (what else these days) but only for server side 11ty. The client side is pure un-built un-bundled un-munged HTML, CSS and JavaScript (like your grandma used to make), using global scripts. And why not? it works just fine and I'll bundle etc if and when I need to. I did look at browser modules but there's a few quirks to solve (like modules aer deferred which messes up code in the main html file)
+Dev and Build is Nodejs based (what else these days) but only for server side 11ty. The client side is pure un-built un-bundled un-munged HTML, CSS and JavaScript (like your grandma used to make), using global scripts. And why not? it works just fine and I'll bundle etc if and when I need to. I did look at browser modules but there's a few quirks to solve (like modules are deferred which messes up code in the main html file)
 
 An what about deployment? Well, GitHub pages can be bent to work without Jeckyl they have limitations. GitHub now has Actions  to provide Continuous Deployment and there's Zeit (I mean Vercel). But [Netlify](https://www.netlify.com/) really seem to call me with their good range of services, free pricing tier and community vibe. They also provide Serverless Functions for if/when we do need backend functionality. Netlify also have a CMS using GitHub for storage that would allow for an alternative in-browser editing / admin UI if ever required.
 
 ## Outro
 
-So there we have it. A perfectly serviceable stack for a slightly left-field blog/journal/app thing. So far it has  proven more than adequate. I create widgets using client side Javascript, sometimes with Alpine, and 11ty shortcodes to make the markdown page editing experience quick and clean. That required a little trick with nodemono and browsersync to get watched rebuild of the shortcodes but works really well.
+So there we have it. A perfectly serviceable stack for a slightly left-field blog/journal/app thing. So far it has  proven more than adequate. I create widgets using client side Javascript, sometimes with Alpine, and 11ty shortcodes to make the markdown page editing experience quick and clean. That required a little trick with nodemon and browsersync to get a watched rebuild of the shortcodes but it works really well.
 
 Here's an example daily [practice page](https://github.com/music-practice-tools/music-practice-tools/blob/7c5b1ad3ec845e859e543f5fabd786c39a16338c/pages/activities/daily.md) as created and a [tune page](https://github.com/music-practice-tools/music-practice-tools/blob/7c5b1ad3ec845e859e543f5fabd786c39a16338c/pages/tunes/the-thrill-is-gone.md).
 
-We're really lucky to have so much great open source software to build on. Hopefully this adds a little something to that.
+We're really lucky to have so much great open source software to build on. Hopefully this adds a little useful something to commons.
 
-Now I can concentrate much more on practicing bass.
+Right, now I can concentrate much more on developing my bass chops!
 
 Oh, wait, I just thought of a really cool new feature to add.....
