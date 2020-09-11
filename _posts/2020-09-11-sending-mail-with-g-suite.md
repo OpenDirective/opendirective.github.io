@@ -17,7 +17,7 @@ As the TWAM app has a backend of Netlify Functions (which simplify AWS Lambda) r
 
 Thus direct Gmail use is my preferred solution, assuming it can be made to work with a reasonable "pain threshold". As usual with Google APIs, the documentation is poor, confusing and often downright misleading due to multiple versions being around on the interwebs. Worse, when trying to find solutions in Stack overflow etc, well, "there be Dragons" as they used to say on old maps for unknown dangers.
 
-But in the end after many, many, failed and very fustrating attempts the solution using the Gmail REST API directly is pleasantly simple. You just need to get all the parts lined up "just so2. Google provide a JavaScript API for node , but that is a monster monolith covering ALL Google's APIs. I don't expect so much deployed code will run up big costs on Netlify Serverless Functions, but the thought of using such a "Swiss Army Knife" binding leaves a nasty taste in my mouth. REST will do just fine, thank you; after all, it's the way of the web.
+But in the end after many, many, failed and very frustrating attempts the solution using the Gmail REST API directly is pleasantly simple. You just need to get all the parts lined up "just so". Google provide a JavaScript API for node , but that is a monster monolith covering ALL Google's APIs. I don't expect so much deployed code will run up big costs on Netlify Serverless Functions, but the thought of using such a "Swiss Army Knife" binding leaves a nasty taste in my mouth. REST will do just fine, thank you; after all, it's the way of the web.
 
 ## Code
 
@@ -29,7 +29,7 @@ This is just as well because we want to send emails as the app backend, not a sp
 
 ### No need to BASE64 encode content
 
-While nearly all examples show the HTTP message body for the email being BASE64 encoded this appears uneccessary. You only need to specify the correct `Content-Type` header. Anyway, BASE64 encodinbg is certainly not part of the RFC 822 email specification. Perhaps we'll hit some content that requires it but for now I'm only sending single part text content (and unicode works just fine).
+While nearly all examples show the HTTP message body for the email being BASE64 encoded this appears uneccessary. You only need to specify the correct `Content-Type` header. Anyway, BASE64 encoding is certainly not part of the RFC 822 email specification. Perhaps we'll hit some content that requires it but for now I'm only sending single part text content (and unicode works just fine).
 
 ### No need to use NodeFetch or NAXIOS
 
