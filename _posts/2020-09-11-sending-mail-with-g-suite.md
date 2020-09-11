@@ -33,7 +33,7 @@ While nearly all examples show the HTTP message body for the email being BASE64 
 
 ### No need to use NodeFetch or NAXIOS
 
-`google-auth-library` includes a dependency on Gaxios, a version of AXIOS that works just fine for our purposes.
+`google-auth-library` includes a dependency on Gaxios, a version of AXIOS that works just fine for our purposes. It's called via a wrapper that retries under some auth error circumstances.
 
 ### The email functions
 
