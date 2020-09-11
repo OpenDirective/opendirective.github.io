@@ -4,7 +4,7 @@ title: Sending emails with the G Suite Gmail API
 ---
 
 <div class="message">
-If you have a G Suite instance then sending emails from a backend using Gmail turns out to be really simple. Using the Gmail API rather than SMTP and enabling G Suite global delegation means you can simply send email as a G SUite user.
+If you have a G Suite instance then sending emails from a backend using Gmail turns out to be really simple. Using the Gmail API rather than SMTP and enabling G Suite global delegation means you can simply send email as a G Suite user. Here's how I did it with Netlify Functions.
 </div>
 
 ## Email options for backend
