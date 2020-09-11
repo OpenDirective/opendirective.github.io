@@ -13,12 +13,12 @@ Tools with a Mission ([TWAM](https://www.twam.uk/)) recycle and refurbish tools,
 
 This is a pretty standard setup of an app with forms plus a back office process which defines the  workflow. Thus we looked at the usual candidates for forms and workflow. I personally find such systems to be a quite restrictive, especially if they only use a GUI and cannot be data or code driven. Given TWAM's embedded use of Goggle Apps we also considered Google Action script which is basically a hosted JavaScript environment with some support for creating web apps and APIs.
 
-In the end however, my very positive experience with using Netlify Deployments along with Eleventy for [https://musicpracticetools.net](https://musicpracticetools.net) meant I was keen to try more of the Netlify portfolio of serverless services. However, for the database, rather than the pNetlify partner noSQL Fauna, I decided to try using Google Sheets. Using sheets opens up the possibility of easy access to the data and ad-hoc processing using office software skills rather than full developer skills. In addition, email is used for inter-person messaging and for automatic notifications. Again, why code a new messaging solution when a good one exists and fits in with people's work patterns. So, the stack chosen for the proof of concept is:
+In the end however, my very positive experience with using Netlify Deployments along with Eleventy for [https://musicpracticetools.net](https://musicpracticetools.net) meant I was keen to try more of the Netlify portfolio of serverless services. However, for the database, rather than the pNetlify partner noSQL Fauna, I decided to try using Google Sheets. Using sheets opens up the possibility of easy access to the data and ad-hoc processing using office software skills rather than full developer skills. In addition, Gmail is used for inter-person messaging and for automatic notifications. Again, why code a new messaging solution when a good one exists and fits in with people's work patterns. So, the stack chosen for the proof of concept is:
 
 * Eleventy with nunjucks templates
 * Good ol' HTML, CSS and Javascript - ie no framework
-* Google Sheets API
-* Email
+* Google Sheets API for database
+* Gmail API for notifications
 * Netlify deploys, forms, functions, identity and role based gating
 * Netlify dev - not really part of the stack but excellent
 
