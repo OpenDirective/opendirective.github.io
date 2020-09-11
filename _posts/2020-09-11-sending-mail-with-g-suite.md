@@ -113,3 +113,24 @@ exports.sendEmail = async function ({
   return exports.sendRawEmail(email)
 }
 ```
+
+## Extra - templates in 3 lines
+
+I also required a simple template for the emails. Something like mustache (or handlebars) is just fine. Lodash provides the necessary.
+
+```javascript
+const template = require('lodash.template')
+
+function parseTemplate(templ, data) {
+  const options = { interpolate: /{{([\s\S]+?)}}/g } // mustache style
+  const compiled = template(templ, options)
+  return compiled(data)
+}
+
+ const notification = {
+      to: recipient.email,
+      subject: parseTemplate(email.subject, templData),
+      message: parseTemplate(email.message, templData),
+    }
+  sendEmail(notification)
+```
