@@ -8,39 +8,39 @@ title: Comparing Svelte Reactivity Options
 
 ## Reactivity
 
-Reactivity is a coding architecture where when some data changes, other dependent data also gets updated, automatically. Perhaps the most common occurrence of this is in spreadsheets where changing a cell value causes all referencing cells to also update.
+Reactivity is a coding "style" where when some data changes, other dependent data also gets updated, automatically. Perhaps the most common occurrence of this is in spreadsheets where changing a cell value causes all referencing cells to also update. This is often seen as a "push" semantic, compared to a "pull" sematic of calling a function.
 
 Reactivity is often implemented using a version of the "publish / subscribe" (pubsub) pattern, where any number of subscribers can be updated with changes broadcast from a publisher.
 
-Eventing systems such as DOM events provide one form of decoupled reactivity where an event (or message) is dispatched form one element and other elements may handle it, usually in a callback function.
+Event systems such as DOM events provide one form of highly decoupled reactivity where an event (or message) is dispatched from one element and other elements may handle it. In the DOM the handler is a callback function.
 
-Reactivity is not usually something built into programming languages. For Javascript it requires a library or framework feature. However, there is a Stage One TC39 Proposal to add an [Observable](https://github.com/tc39/proposal-observable) type to Javascript. This is based on the [RxJS](https://rxjs.dev/) Reactive Extensions Library for JavaScript, which enables a style of programming called Functional Reactive Programming (FRP).
+Reactivity is not usually built into programming languages. For Javascript it requires a library or framework feature. However, there is a Stage One TC39 Proposal to add an [Observable](https://github.com/tc39/proposal-observable) type to Javascript. This is based on the [RxJS](https://rxjs.dev/) Reactive Extensions Library for JavaScript, which enables a style of programming called Functional Reactive Programming (FRP) or "streams".
 
-FRP is often now shortened to Reactive Programming (RP) which is technically a bit different. FRP, like other functional programming styles, involves data flowing through small functions such as `map` and `reduce`. It thus consists of declarative chains of expressions, compared to imperative lists of statements or object oriented methods operating on private data.
+FRP is often referred to by the shorter Reactive Programming (RP) which is actually technically a bit different. FRP, like other functional programming styles, involves data flowing through small functions such as `map` and `reduce`. Code thus consists of declarative chains of expressions, compared to imperative lists of statements or object oriented methods operating on private data.
 
 ## Svelte Reactivity
 
-One of the highly satisfying features of the [Svelte](https://svelte.dev/) web app development framework is that reactivity is baked in (unlike React). Any **assignment** to a local variables is reactive and will cause the component to be re-rendered.
+One of the highly satisfying features of the [Svelte](https://svelte.dev/) web app development framework is that reactivity is baked in (unlike React). Any **assignment** to a local variables is reactive and will cause the component to be re-rendered when the value changes.
 
-There are also three explicit reactive features and while the excellent svelte documentation describes each, it may not be clear when to use each. None of these go as far as FRP. But they are nevertheless extremely powerful and easy to use when creating interactive web apps with Svelte.
+There are also three explicit reactive features and while the excellent Svelte documentation describes each, it may not be obvious which one to use. None of these features go quite as far as FRP. But, they are nevertheless extremely powerful and easy to use when creating interactive web apps with Svelte.
 
 Note that as with other Javascript reactive libraries the `$` symbol is conventionally used to identify reactive elements.
 
 ### Reactive Statements
 
-Statements can be marked as being reactive. These can be single line or block statements. The statement will be revaluated whenever any variable or properties directly referenced in it are changed. As with simple assignments, changes to reactively assigned variables will cause the component to be re-rendered.
+Statements can be marked as being reactive. These can be single line or block statements. The statement will be revaluated whenever any variable or properties directly referenced in it are changed. As with simple assignments, changes to will cause the enclosing component to be re-rendered.
 
-This form of reactivity is marked with the rarely used Javascript [label](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/label) syntax with a variable name of `$`, ie lines of code that start with `$:`. In references the reactive variable name is used without any `$`.
+This form of reactivity is marked with the rarely used Javascript [label](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/label) syntax using a variable name of `$`, ie lines of code that start with `$:`. To reference the value in a component the variable name is used directly, without any `$`.
 
 Updates are synchronous such that code changing the source variable will return after all the referencing reactive statements are also updated.
 
-Reactive assignments and their references are useful within code in a single file such as a Svelte component. For example, a event handler declared in the HTML section may update a variable.  That variable can be referenced in a reactive statement in the script section to derive a new value. Then, the reactively assigned variable can then referenced in the HTML so whenever the event occurs the HTML content will be updated to match the new computed value.
+Reactive assignments and their references are useful within code in a single file such as a Svelte component. For example, a event handler declared in the HTML section may update a variable.  That variable can be referenced in a reactive statement in the script section to derive a new value. Then, the new value can  referenced in the HTML as with a simple variable assignment. Then, whenever the event occurs the HTML content will be updated to match the new computed value.
 
 See the [tutorial](https://svelte.dev/tutorial/reactive-assignments) and [docs](https://svelte.dev/docs#component-format-script-2-assignments-are-reactive) for details.
 
 ### Reactive Stores
 
-Svelte Stores are reactive and use the Observable pattern. They are similar to Observable types (see above). In this case the store is an observable which broadcasts changes to any code that is subscribed to it.
+Svelte Stores are reactive and use the Observable pattern. They are similar to Observable types (see above). In Svelte the store is an observable which broadcasts changes to any code that is subscribed to it.
 
 Stores are created using library functions and there are three types: `readable`, `writable` and `derived`. Readables are sources of data streams with sequential values being created in a callback. Writables may also be updated by external code using the `set` and `update` methods. Derived stores provide composition by computing and emitting values based on those from other stores when those are updated. Stores may be subscribed to by calling the `subscribe` method or the Svelte compiler provides syntactic sugar in the form of prefixing the store name with a `$`.
 
