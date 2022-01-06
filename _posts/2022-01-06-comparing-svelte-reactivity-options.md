@@ -3,7 +3,7 @@ layout: post
 title: Comparing Svelte Reactivity Options
 ---
 
-<div class="message"> The Svelte framework has several reactivity features and this post explores when you might use each one.
+<div class="message"> The Svelte framework has several reactivity features, Reactive Assignment Statements, Stores and Component Events. This post summarises them and explores when you might use each one.
 </div>
 
 ## Reactivity
