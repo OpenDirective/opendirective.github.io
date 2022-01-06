@@ -60,3 +60,7 @@ Events are synchronous. The component event handlers are called directly when th
 Component Events are useful when you want to use a decoupled event or message pattern, including to pass up the component tree.
 
 See the [tutorial](https://svelte.dev/tutorial/component-events) and [docs](https://svelte.dev/docs#run-time-svelte-createeventdispatcher) for details.
+
+## Further Info
+
+- More details and examples of using `$` in [The many meanings of $ in Svelte](https://geoffrich.net/posts/svelte-$-meanings/) by Geof Rich
