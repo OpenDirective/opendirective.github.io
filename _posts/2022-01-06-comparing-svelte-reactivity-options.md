@@ -1,0 +1,57 @@
+---
+layout: post
+title: Comparing Svelte Reactivity Options
+---
+
+<div class="message"> The Svelte framework has several reactivity features and this post explores when you might use each one.
+</div>
+
+## Reactivity
+
+Reactivity is a coding pattern where when some data changes, other dependent data also gets updated, automatically. Perhaps the most common occurrence of this is in spreadsheets where changing a cell value causes all referencing cells to also update.
+
+Reactivity is not usually something built into programming languages. For Javascript it requires a library or framework feature. However, there is a Stage One TC39 Proposal to add an [Observable](https://github.com/tc39/proposal-observable) type to Javascript. This is based on the [RxJS](https://rxjs.dev/) Reactive Extensions Library for JavaScript, which enables a style of programming called Functional Reactive Programming (FRP), which is often now shortened to just Reactive Programming (RP) which is technically a bit different. FRP, like other functional programming styles, involves data flowing through small functions such as `map` and `reduce`. It thus consists of declarative chains of expressions, compared to imperative lists of statements or object oriented methods operating on private data.
+
+## Svelte Reactivity
+
+One of the highly satisfying features of the [Svelte](https://svelte.dev/) web app development framework is that it provides reactivity (unlike React).
+
+Actually there are 3 different reactive features and while the excellent svelte documentation describes each, it may not be clear where to use each.
+
+Note that as with other Javascript reactive libraries the `$` symbol is conventionally used to identify reactive elements.
+
+### Reactive Assignments
+
+Variable assignment statements (eg `a = b`), including assigning declarations (eg `let a = b`), can me marked as being reactive. So can block statements containing assignments along with other statements. Then any use of the reactive variable will be automatically updated when the dependents change.
+
+This form of reactivity is marked with the rarely used Javascript [label](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/label) syntax with a variable name of `$`, ie lines of code that start with `$:`. In references the reactive variable name is used without any `$`.
+
+Updates are synchronous such that code changing the source variable will return after all the referencing reactive statements are also updated.
+
+Reactive assignments and their references are useful within code in a single file such as a Svelte component. For example, a event handler declared in the HTML section may update a variable.  That variable can be referenced in a reactive statement in the script section to derive a new value. The reactively assigned variable can then refereced in the HTML. Then, whenever the event occurs the HTML content will be updated to match the new computed value, almost for free.
+
+See the [tutorial](https://svelte.dev/tutorial/reactive-assignments) and [docs](https://svelte.dev/docs#component-format-script-2-assignments-are-reactive) for details.
+
+### Reactive Stores
+
+Svelte Stores are reactive and use the Observable pattern, a form of "publish, subscribe" (pubsub). They are similar to Observable types (see above). In this case the store is an observable which broadcasts changes to any code that is subscribed to it.
+
+Stores are created using library functions and there are 3 types: `readable`, `writable` and `derived`. Readables are sources of data streams with sequential values being created in a callback. Writables may also be updated by external code using the `set` and `update` methods. Derived stores provide composition by computing and emitting values based on those from other stores when those are updated. Stores may be subscribed to by calling the `subscribe` method or the Svelte compiler provides syntactic sugar in the form of prefixing the store name with a `$`.
+
+Updates can be synchronous or asynchronous depending on how the updating function is coded.
+
+Stores are useful if you need asynchronous reactivity or want to share updates between code in many places, including components not in a parent-child relationship. For example, a component event handler can update a writable store and all subscribed components will be updated. They can also be used outside components. While Svelte doesn't conceptually deal with FRP or streams it is easy to to integrate other observable libraries like RxJS as the APIs are standardised.
+
+See the [tutorial](https://svelte.dev/tutorial/writable-stores) and [docs](https://svelte.dev/docs#run-time-svelte-store) for details.
+
+### Component Events
+
+Svelte Component events provide a form of pubsub reactivity between child components and their parents. Like the [DOM custom event](https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent) object, which they use, they can be simple triggers or also pass data values (aka details). Unlike DOM events they do not use PostMessage to propagate around the DOM hierarchy, Rather, they directly call the component's event handler for the event.
+
+Events are created using the `createEventDispatcher` function. They are handled using the Svelte DOM event handler syntax `on:event-name={handler}`. A custom event name is supplied rather than a DOM event name. The handler will receive the event including any extended details provided by the dispatcher. A form of the event handler syntax is used to pass the event on to the parent without any processing.
+
+Events are synchronous. The component event handlers are called directly when the message is dispatched.
+
+Component Events are useful when you want to use a decoupled event or message pattern, including to pass up the component tree.
+
+See the [tutorial](https://svelte.dev/tutorial/component-events) and [docs](https://svelte.dev/docs#run-time-svelte-createeventdispatcher) for details.
