@@ -3,7 +3,7 @@ layout: post
 title: Comparing Svelte Reactivity Options
 ---
 
-<div class="message"> The Svelte framework has several reactivity features, Reactive Assignment Statements, Stores and Component Events. This post summarises them and explores when you might use each one.
+<div class="message"> The Svelte framework has several reactivity features: Assignments, Statements, Stores and Component Events. This post summarises the options and explores when you might use each one.
 </div>
 
 ## Reactivity
@@ -14,21 +14,21 @@ Reactivity is not usually something built into programming languages. For Javasc
 
 ## Svelte Reactivity
 
-One of the highly satisfying features of the [Svelte](https://svelte.dev/) web app development framework is that it provides reactivity (unlike React).
+One of the highly satisfying features of the [Svelte](https://svelte.dev/) web app development framework is that reactivity is baked in (unlike React). Any **assignment** to a local variables is reactive and will cause the component to be re-rendered.
 
-Actually there are 3 different reactive features and while the excellent svelte documentation describes each, it may not be clear where to use each.
+There are also 3 different explicit reactive features and while the excellent svelte documentation describes each, it may not be clear when to use each.
 
 Note that as with other Javascript reactive libraries the `$` symbol is conventionally used to identify reactive elements.
 
-### Reactive Assignments
+### Reactive Statements
 
-Variable assignment statements (eg `a = b`), including assigning declarations (eg `let a = b`), can me marked as being reactive. So can block statements containing assignments along with other statements. Then any use of the reactive variable will be automatically updated when the dependents change.
+Statements can be marked as being reactive. These can be single line or block statements. The statement will be revaluated whenever any variable or properties directly referenced in it are changed. As with simple assignments, changes to reactively assigned variables will cause the component to be re-rendered.
 
 This form of reactivity is marked with the rarely used Javascript [label](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/label) syntax with a variable name of `$`, ie lines of code that start with `$:`. In references the reactive variable name is used without any `$`.
 
 Updates are synchronous such that code changing the source variable will return after all the referencing reactive statements are also updated.
 
-Reactive assignments and their references are useful within code in a single file such as a Svelte component. For example, a event handler declared in the HTML section may update a variable.  That variable can be referenced in a reactive statement in the script section to derive a new value. The reactively assigned variable can then refereced in the HTML. Then, whenever the event occurs the HTML content will be updated to match the new computed value, almost for free.
+Reactive assignments and their references are useful within code in a single file such as a Svelte component. For example, a event handler declared in the HTML section may update a variable.  That variable can be referenced in a reactive statement in the script section to derive a new value. Then, the reactively assigned variable can then referenced in the HTML so whenever the event occurs the HTML content will be updated to match the new computed value.
 
 See the [tutorial](https://svelte.dev/tutorial/reactive-assignments) and [docs](https://svelte.dev/docs#component-format-script-2-assignments-are-reactive) for details.
 
