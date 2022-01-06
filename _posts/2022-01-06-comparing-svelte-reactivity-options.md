@@ -10,13 +10,13 @@ title: Comparing Svelte Reactivity Options
 
 Reactivity is a coding pattern where when some data changes, other dependent data also gets updated, automatically. Perhaps the most common occurrence of this is in spreadsheets where changing a cell value causes all referencing cells to also update.
 
-Reactivity is not usually something built into programming languages. For Javascript it requires a library or framework feature. However, there is a Stage One TC39 Proposal to add an [Observable](https://github.com/tc39/proposal-observable) type to Javascript. This is based on the [RxJS](https://rxjs.dev/) Reactive Extensions Library for JavaScript, which enables a style of programming called Functional Reactive Programming (FRP), which is often now shortened to just Reactive Programming (RP) which is technically a bit different. FRP, like other functional programming styles, involves data flowing through small functions such as `map` and `reduce`. It thus consists of declarative chains of expressions, compared to imperative lists of statements or object oriented methods operating on private data.
+Reactivity is not usually something built into programming languages. For Javascript it requires a library or framework feature. However, there is a Stage One TC39 Proposal to add an [Observable](https://github.com/tc39/proposal-observable) type to Javascript. This is based on the [RxJS](https://rxjs.dev/) Reactive Extensions Library for JavaScript, which enables a style of programming called Functional Reactive Programming (FRP). FRP is often now shortened to Reactive Programming (RP) which is technically a bit different. FRP, like other functional programming styles, involves data flowing through small functions such as `map` and `reduce`. It thus consists of declarative chains of expressions, compared to imperative lists of statements or object oriented methods operating on private data.
 
 ## Svelte Reactivity
 
 One of the highly satisfying features of the [Svelte](https://svelte.dev/) web app development framework is that reactivity is baked in (unlike React). Any **assignment** to a local variables is reactive and will cause the component to be re-rendered.
 
-There are also 3 different explicit reactive features and while the excellent svelte documentation describes each, it may not be clear when to use each.
+There are also 3 explicit reactive features and while the excellent svelte documentation describes each, it may not be clear when to use each. None of these go as far as FRP. But they are nevertheless extremely powerful and easy to use when creating interactive web apps with Svelte.
 
 Note that as with other Javascript reactive libraries the `$` symbol is conventionally used to identify reactive elements.
 
