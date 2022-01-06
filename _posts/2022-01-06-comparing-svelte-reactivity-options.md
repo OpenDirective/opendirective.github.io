@@ -8,10 +8,15 @@ title: Comparing Svelte Reactivity Options
 
 ## Reactivity
 
-Reactivity is a coding pattern where when some data changes, other dependent data also gets updated, automatically. Perhaps the most common occurrence of this is in spreadsheets where changing a cell value causes all referencing cells to also update.
+Reactivity is a coding architecture where when some data changes, other dependent data also gets updated, automatically. Perhaps the most common occurrence of this is in spreadsheets where changing a cell value causes all referencing cells to also update.
 
-Reactivity is not usually something built into programming languages. For Javascript it requires a library or framework feature. However, there is a Stage One TC39 Proposal to add an [Observable](https://github.com/tc39/proposal-observable) type to Javascript. This is based on the [RxJS](https://rxjs.dev/) Reactive Extensions Library for JavaScript, which enables a style of programming called Functional Reactive Programming (FRP). FRP is often now shortened to Reactive Programming (RP) which is technically a bit different. FRP, like other functional programming styles, involves data flowing through small functions such as `map` and `reduce`. It thus consists of declarative chains of expressions, compared to imperative lists of statements or object oriented methods operating on private data.
+Reactivity is often implemented using a version of the "publish / subscribe" (pubsub) pattern, where any number of subscribers can be updated with changes broadcast from a publisher.
 
+Reactivity is not usually something built into programming languages. For Javascript it requires a library or framework feature. However, there is a Stage One TC39 Proposal to add an [Observable](https://github.com/tc39/proposal-observable) type to Javascript. This is based on the [RxJS](https://rxjs.dev/) Reactive Extensions Library for JavaScript, which enables a style of programming called Functional Reactive Programming (FRP).
+
+FRP is often now shortened to Reactive Programming (RP) which is technically a bit different. FRP, like other functional programming styles, involves data flowing through small functions such as `map` and `reduce`. It thus consists of declarative chains of expressions, compared to imperative lists of statements or object oriented methods operating on private data.
+
+Eventing systems such as DOM events also provide reactivity where an event (or message) is dispatched form one element and other elements may handle it, usually in a callback function.
 ## Svelte Reactivity
 
 One of the highly satisfying features of the [Svelte](https://svelte.dev/) web app development framework is that reactivity is baked in (unlike React). Any **assignment** to a local variables is reactive and will cause the component to be re-rendered.
@@ -34,7 +39,7 @@ See the [tutorial](https://svelte.dev/tutorial/reactive-assignments) and [docs](
 
 ### Reactive Stores
 
-Svelte Stores are reactive and use the Observable pattern, a form of "publish, subscribe" (pubsub). They are similar to Observable types (see above). In this case the store is an observable which broadcasts changes to any code that is subscribed to it.
+Svelte Stores are reactive and use the Observable pattern. They are similar to Observable types (see above). In this case the store is an observable which broadcasts changes to any code that is subscribed to it.
 
 Stores are created using library functions and there are 3 types: `readable`, `writable` and `derived`. Readables are sources of data streams with sequential values being created in a callback. Writables may also be updated by external code using the `set` and `update` methods. Derived stores provide composition by computing and emitting values based on those from other stores when those are updated. Stores may be subscribed to by calling the `subscribe` method or the Svelte compiler provides syntactic sugar in the form of prefixing the store name with a `$`.
 
