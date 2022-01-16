@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Sending emails with the G Suite Gmail API
 ---
 

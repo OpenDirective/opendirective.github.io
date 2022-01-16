@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: The Open Communication Symbols Ecosystem
 ---
 

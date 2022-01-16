@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Cognitive Accessibility WAI Pages Mockup
 ---
 

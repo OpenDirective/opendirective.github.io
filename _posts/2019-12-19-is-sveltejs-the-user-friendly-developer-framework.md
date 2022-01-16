@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Is svelte.js the user-friendly developer framework?
 ---
 
