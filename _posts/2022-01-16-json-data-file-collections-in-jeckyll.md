@@ -108,4 +108,3 @@ As a final optimisation you can put the code in an `include`, passing the data (
 ```liquid
 {% include sort-data-folder.liquid data=site.data sortKey="name" %}
 ```
-
