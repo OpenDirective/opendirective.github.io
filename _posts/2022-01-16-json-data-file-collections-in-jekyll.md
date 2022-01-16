@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: JSON Data File Collections in Jekyll
 ---
 
@@ -40,7 +40,7 @@ The approach is as follows:
 - the data and initial HTML are directly embedded into the HTML files
 - we can use Jekyll `includes` to modularise the code
 
-At build time we would like to:
+So at build time we would like to:
 
 - access the files as a collection
 - sort the collection on a specific item field - eg name
@@ -53,15 +53,15 @@ The Jekyll documentation on using [data files](https://jekyllrb.com/docs/datafil
 
 ### Tools
 
-Liquid has the concept of `arrays`, but provides a very restricted set of `filters` (functions) that create and operate on them. It also has the `[n]` access operator, plus `first` and `last` methods. Jekyll adds a few more useful filters.
+Liquid has the concept of `arrays`, but provides a very restricted set of `filters` (functions) that create and operate on them. It also has the `[n]` access operator, plus `first` and `last` methods. Jekyll adds a few more useful filters like `push`.
 
-Jekyll also adds `hashes` (objects) and filters that work on them. But hashes are created for you in standard variables and there is no way to create or manipulate them.
+Jekyll also adds `hashes` (objects) and filters that work on them. But hashes are created for you in standard variables and there is no way to create or manipulate them. The `.` and `[]` operators are provide for getting values.
 
 But we can do what we need to with these limited programming constructs.
 
 ### Attempt
 
-Given all our JSON files live in the `_data` directory, an initial attempt might be as trivial as using the variable `site.data` to access them as a collection. Then we can try things like
+Given our JSON files live in the `_data` directory, an initial attempt might be as trivial as using the variable `site.data` to access them as a collection. Then we can try things like
 
 ```liquid
 {{ site.data | sort: 'name' }}
@@ -74,36 +74,37 @@ and
 
 But alas results are unexpected. With a little use of the `inspect` filter it turns out that:
 
-- site.data is a hash keyed by data filename and with values that are file contents are being parsed as json
-- the `jsonify` filter also shows this structure
-- you can iterate over the keys and otherwise treat as an array
+- `site.data` is a hash keyed by data filename and with values that are file contents are being parsed as json
+- the `jsonify` filter also shows a hash
+- when iterating using `for` each item is converted into a 2-tuple of [key, value]
+- sorting appears to work use the filename key
 
 ### Solution
 
-The solution is straight forward. As we don't care about the filenames we can convert the hash values to an array. Then all the operation work as required.
+The solution is straight forward. As we don't care about the filenames we can convert the hash to an array of the values. Then all the operation work as required.
 
 ```liquid
 # create an empty array
-{%- assign itemValues = "" | split: "," -%}
+# note push is non mutating
+{% assign values = "" | split: "," %}
 
-# add the hash values to the array
-{%- for item in site.data -%}
-    {% assign itemValues = item[1] -%}
-    # note push is non mutating
-    {% assign itemValues = itemValues | push: itemValue -%}
-{%- endfor -%}```
+{% for item in site.data -%}
+    {% assign values = item[1] %}
+    {% assign values = values | push: value %}
+{% endfor %}
+```
 
 Note there's no "return" form includes so the output is any variables we set. itemValues in this case.
 
 Now you can do the things we tried before:
 
 ```liquid
-{{ itemValues | sort: "name" }}
-{{ itemValues | jsonify }}
-{% for item in itemValues %} ... {{ item.name }} ... {% endfor %}
+{{ values | sort: "name" }}
+{{ values | jsonify }}
+{% for value in values %} ... {{ value.name }} ... {% endfor %}
 ```
 
-As a final optimisation you can put the code in an `include`, passing the data (you can use subfolders of `_data` organise) and a sort key.
+As a optimisation you can put the code in an `include`, passing the data folder (you can use subfolders of `_data` to organise things) and a sort key.
 
 ```liquid
 {% include sort-data-folder.liquid data=site.data sortKey="name" %}
