@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Comparing Svelte Reactivity Options
 ---
 
@@ -14,7 +14,7 @@ Reactivity is often implemented using a version of the "publish / subscribe" (pu
 
 Event systems such as DOM events provide one form of highly decoupled reactivity where an event (or message) is dispatched from one element and other elements may handle it. In the DOM the handler is a callback function.
 
-Reactivity is not usually built into programming languages. JavaScript requires a library or framework feature. However, there is a Stage One TC39 Proposal to add an [Observable](https://github.com/tc39/proposal-observable) type to JavaScript. This is based on the [RxJS](https://rxjs.dev/) Reactive Extensions Library for JavaScript, which enables a style of programming called Functional Reactive Programming (FRP) or "streams". Another popular reactive library for JavaScript is [MobX](https://mobx.js.org/getting-started.html) state manager. 
+Reactivity is not usually built into programming languages. JavaScript requires a library or framework feature. However, there is a Stage One TC39 Proposal to add an [Observable](https://github.com/tc39/proposal-observable) type to JavaScript. This is based on the [RxJS](https://rxjs.dev/) Reactive Extensions Library for JavaScript, which enables a style of programming called Functional Reactive Programming (FRP) or "streams". Another popular reactive library for JavaScript is [MobX](https://mobx.js.org/getting-started.html) state manager.
 
 FRP is often referred to by the shorter Reactive Programming (RP) which is actually technically a bit different. FRP, like other functional programming styles, involves data flowing through small functions such as `map` and `reduce`. Code thus consists of declarative chains of expressions, compared to imperative lists of statements or object oriented methods operating on private data.
 

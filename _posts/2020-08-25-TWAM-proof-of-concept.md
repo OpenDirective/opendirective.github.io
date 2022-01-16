@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: TWAM Proof of Concept app - using Netlify, Eleventy and Google Sheets
 ---
 

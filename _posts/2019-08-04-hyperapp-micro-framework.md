@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Hyperapp, the frontend web framework your users might appreciate
 ---
 
