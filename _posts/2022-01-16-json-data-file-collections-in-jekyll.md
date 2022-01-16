@@ -1,9 +1,9 @@
 ---
-layout: post
+layout: page
 title: JSON Data File Collections in Jekyll
 ---
 
-<div class="message">While Jekyll and liquid provide very limited support for collections, it's surprisingly easy to mange a set of JSON files so they can be readily and efficiently accessed on the client.
+<div class="message">While Jekyll and liquid provide limited support for collections, it's surprisingly easy to mange a set of JSON files so they can be readily and efficiently accessed on the client.
 </div>
 
 ## Requirements
