@@ -1,7 +1,6 @@
 ---
 layout: post
 title: JSON Data File Collections in Jekyll
-render_with_liquid: false
 ---
 
 <div class="message">While Jekyll and liquid provide very limited support for collections, it's surprisingly easy to mange a set of JSON files so they can be readily and efficiently accessed on the client.
@@ -108,5 +107,7 @@ Now you can do the things we tried before:
 As a optimisation you can put the code in an `include`, passing the data folder (you can use subfolders of `_data` to organise things) and a sort key.
 
 ```liquid
+{% raw %}
 {% include sort-data-folder.liquid data=site.data sortKey="name" %}
+{% endraw %}
 ```
