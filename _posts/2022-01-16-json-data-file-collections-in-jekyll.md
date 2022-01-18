@@ -88,7 +88,7 @@ But alas, results are not as expected. So with a little use of the `inspect` fil
 The solution is straightforward. As we don't care about the filenames we can convert the hash to an array of the values. Then all the operation work as required. Here's the code:
 
 ```liquid
-{%- raw -%}
+{% raw %}
 # create an empty array and add the hash item values
 # note push is non mutating
 {% assign values = "" | split: "," %}
@@ -96,7 +96,7 @@ The solution is straightforward. As we don't care about the filenames we can con
     {% assign values = item[1] %}
     {% assign values = values | push: value %}
 {% endfor %}
-{%- endraw -%}
+{% endraw %}
 ```
 
 Note there's no "return" from includes so the output is any variables we set. In this case it's values.
@@ -104,17 +104,17 @@ Note there's no "return" from includes so the output is any variables we set. In
 Now you can perform those operations we tried before:
 
 ```liquid
-{%- raw -%}
+{% raw %}
 {{ values | sort: "name" }}
 {{ values | jsonify }}
 {% for value in values %} ... {{ value.name }} ... {% endfor %}
-{%- endraw -%}
+{% endraw %}
 ```
 
 As a optimisation you can put the code in an `include`, passing the data folder (you can use subfolders of `_data` to organise things) and a sort key.
 
 ```liquid
-{%- raw -%}
+{% raw %}
 {% include sort-data-folder.liquid data=site.data sortKey="name" %}
-{%- endraw -%}
+{% endraw %}
 ```

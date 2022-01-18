@@ -118,6 +118,7 @@ exports.sendEmail = async function ({
 
 I also required a simple template for the emails. Something like mustache (or handlebars) is just fine. Lodash provides the necessary.
 
+{% raw %}
 ```javascript
 const template = require('lodash.template')
 
@@ -134,3 +135,5 @@ function parseTemplate(templ, data) {
     }
   sendEmail(notification)
 ```
+{% endraw %}
+
