@@ -67,7 +67,7 @@ But we can do what we need to with these limited programming language features.
 Given our JSON files live in the `_data` directory, an initial attempt might be as trivial as using the variable `site.data` to access them as a collection. Then we can try things like
 
 ```liquid
-{%- draw -%}
+{%- raw -%}
 {{ site.data | sort: 'name' }}
 or
 {{ site.data.items | jsonify }}
