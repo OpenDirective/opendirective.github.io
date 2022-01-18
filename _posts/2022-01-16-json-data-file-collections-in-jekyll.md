@@ -67,12 +67,13 @@ But we can do what we need to with these limited programming language features.
 Given our JSON files live in the `_data` directory, an initial attempt might be as trivial as using the variable `site.data` to access them as a collection. Then we can try things like
 
 ```liquid
+{%- draw -%}
 {{ site.data | sort: 'name' }}
 or
 {{ site.data.items | jsonify }}
 and
 {% for item in side.data %} ... {{ item.name }} ... {% endfor %}
-
+{%- endraw -%}
 ```
 
 But alas, results are not as expected. So with a little use of the `inspect` filter it turns out that:
@@ -87,6 +88,7 @@ But alas, results are not as expected. So with a little use of the `inspect` fil
 The solution is straightforward. As we don't care about the filenames we can convert the hash to an array of the values. Then all the operation work as required. Here's the code:
 
 ```liquid
+{%- raw -%}
 # create an empty array and add the hash item values
 # note push is non mutating
 {% assign values = "" | split: "," %}
@@ -94,6 +96,7 @@ The solution is straightforward. As we don't care about the filenames we can con
     {% assign values = item[1] %}
     {% assign values = values | push: value %}
 {% endfor %}
+{%- endraw -%}
 ```
 
 Note there's no "return" from includes so the output is any variables we set. In this case it's values.
@@ -101,15 +104,17 @@ Note there's no "return" from includes so the output is any variables we set. In
 Now you can perform those operations we tried before:
 
 ```liquid
+{%- raw -%}
 {{ values | sort: "name" }}
 {{ values | jsonify }}
 {% for value in values %} ... {{ value.name }} ... {% endfor %}
+{%- endraw -%}
 ```
 
 As a optimisation you can put the code in an `include`, passing the data folder (you can use subfolders of `_data` to organise things) and a sort key.
 
 ```liquid
-{% raw %}
+{%- raw -%}
 {% include sort-data-folder.liquid data=site.data sortKey="name" %}
-{% endraw %}
+{%- endraw -%}
 ```
