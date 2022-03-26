@@ -46,21 +46,21 @@ The final touch is a set of predefined containers covering a range of back and f
 
 What this means is that given a URL you get a fully functional nodejs server as well as the frontend app, which is also served from the container. This is all running in the browser window / tab. You can then use the powerful browser F12 developer tools to debug BOTH front and backend.
 
-The reason is say this is "web native" development is that apart from running the backend in the browser, you get to leverage the core super power of the web. The URL!
+The reason I say this is "web native" development is that apart from running the backend in the browser, you get to leverage the core super power of the web. The URL!
 
 URLs underpin the [RESTful](https://en.wikipedia.org/wiki/Representational_state_transfer) web architecture. They identify a resource and you can share them, embed them in content, use them in apps, even put them in a QR code. With StackBlitz that means there are now many ways to access a full stack app running in a web browser.
 
 As developers often want to leverage existing code and modify it, StackBlitz provides as simple way to use the common "fork" pattern. This gives you a complete new copy of the full-stack, ready to work on. With the coming improved GitHub integration that's going to neatly fit existing developer workflows too. This could open up new ways to make and accept community contributions via Pull Requests.
 
-As browser's support multiple tabs you can have multiple web apps running at once. For example, to compare a fork or Pull Request. They are completely isolated, neatly avoid the common problem experienced on developer machines of conflicting version fo tools or other dependencies.
+As browser's support multiple tabs you can have multiple web apps running at once. For example, to compare a fork or Pull Request. They are completely isolated, neatly avoiding the common problem experienced on developer machines of conflicting versions of globally installed tools or dependencies.
 
-Under the bonnet (hood), I expect a URL simply references a text based container configuration resource. Meaning not only low server costs for StackBitz but also, as static assets, they can be pushed to the edge. Thus providing very low latency for an even faster developer experience.
+Under the bonnet (hood), I expect a URL simply refers to a text based container configuration resource. The StackBlitz code turns that into the fully running app representation. This means not only low server costs for StackBitz but also, as static assets, they can be pushed to the edge. Thus providing very low latency for an even faster developer experience.
 
 # Other benefits
 
 This is much more than ultra cool technology. It could have a huge impact on how developers work together.
 
-There are some good security gains too. For example, there's less over-the-wire traffic. The code also runs in the deliberately secure browser sandbox. There's also no server attack service to secure and currently WebContainers expose very few ports with access limited to the same browser.
+There are some good security gains too. For example, there's less over-the-wire traffic. The code also runs in the deliberately secure browser sandbox. There's also no public server attack service to secure. Currently, WebContainers expose the one port with access limited to the same browser.
 
 Reliability is boosted by the being able to restart the container and build the stack with a simple browser refresh. The lightning fast speed makes this usable.
 
@@ -72,11 +72,11 @@ The compute model is basically Bring You Own Device (BYOD). There's no need to p
 
 # Limitations
 
-For now at least, the backend is limited to a nodejs server and simple architectures. Thats may not be a restriction for some but there are many other tools out there. For example Ruby is still very popular as is PHP.
+For now at least, the backend is limited to a nodejs server and simple architectures. That may not be a restriction for many but there are other popular web frameworks. For example Ruby is still very popular, as is PHP.
 
-When you wish to deploy elsewhere there is no one-click option, but it's not that hard to do. Static websites, for example SSG generated, are easy enough as you can push the source to git and use the repository in a CI/CD service like Vercel or Netlify. The backend code can also be deployed to PaaS or other environments supporting server configuration.
+When you wish to deploy elsewhere there is no easy one-click option, though it's not that hard to do. Static websites, for example SSG generated, are easy enough to deploy with can push of the source to git can trigger a CI/CD service like Vercel or Netlify. The backend code can also be deployed to PaaS or other environments supporting server configuration.
 
-However, I expect serverless will prove to be the best fit as they can run in the WebContainer as well deployed to common services. Refactoring stateless server code into multiple separate serverless functions is easy enough to do. Deployment could then be automated, perhaps using something like the Serverless project to provide vendor neutrality.
+However, I expect serverless will prove to be the best fit as functions can run in the WebContainer as well be deployed to a service. Refactoring stateless server code into multiple separate serverless functions is easy enough to do. Deployment could then be automated, perhaps using something like the Serverless project to provide vendor neutrality of Function bindings.
 
 # Blue sky
 
