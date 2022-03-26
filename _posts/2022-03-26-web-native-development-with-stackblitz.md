@@ -23,7 +23,7 @@ But what if this separate backend server complexity could also be included in-br
 
 ![A web browser showing files, terminal and preview](/public/stackblitz.png "A full stack app running in a web browser - spot the terminal")
 
-Well you can now try this for yourself, thanks to the groundbreaking StackBlitz service built on their WebContainer technology. Here's an example that runs a full stack [SvelteKit app](https://stackblitz.com/edit/sveltejs-kit-template-default-cemscb?terminal=dev). it boots up in seconds. I think you will be impressed.
+Well you can now try this for yourself, thanks to the groundbreaking StackBlitz service built on their WebContainer technology. Here's an example that runs a full stack [SvelteKit app](https://stackblitz.com/edit/sveltejs-kit-template-default-cemscb?terminal=dev). It boots up in seconds. I think you will be impressed.
 
 # WebContainters
 
