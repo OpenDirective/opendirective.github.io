@@ -15,7 +15,7 @@ Google Maps was an early example of how the web supports rich and powerful user 
 
 Many web apps use a mashup of third party services accessed via HTTP APIs, with backend services and files hosted in cloud and edge services. This provides many business and technical benefits.
 
-As many front ends have become more JavaScript centric, several developer services arrived to provide rich on-line app-like development environments. These show an editor side-by-side with a preview of the web content.
+As many front ends have become more JavaScript centric, several developer services arrived to provide rich on-line app-like development environments. These show an editor side-by-side with a preview of the web content. But these services still use traditional servers. Plus, your app's backend still needs to be developed, even if using a back end as a Service (BaaS). Many developers still build locally and then push to deployment.
 
 A shout out here to Microsoft Visual Studio code for providing a web native rich IDE experience based on their Monaco editor. Plus a shout out to Google and Electron who's V8 browser core powered the initial desktop version of VS Code, opening the possibilities..
 
