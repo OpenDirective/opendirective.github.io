@@ -3,19 +3,19 @@ layout: post
 title: Web native development with StackBlitz
 ---
 
-<div class="message">The web has evolved into powerful and ubiquitous app deployment platform. We're used to rich in-browser apps that save our data online and support collaborative real-time working experiences. For devleopers, however, while backend services have moved from on-prem to cloud and edge, much of the development work is still performed on local devices.
+<div class="message">The web has evolved into powerful and ubiquitous app deployment platform. We're used to rich in-browser apps that save our data online and support collaborative real-time working experiences. For developers, however, while backend services have moved from on-prem to cloud and edge, much of the development work is still performed on local devices.
 
-That all changed when <a href="https://stackblitz.com/">StackBlitz</a> recently presented **WebContainers** to waiting developers. </div>
+That all changed when <a href="https://stackblitz.com/">StackBlitz</a> recently presented <strong>WebContainers</strong> to waiting developers. </div>
 
 ## The web as a platform
 
-The web has rapidly grown into a powerful device-independent platform for apps as well as content. New capabilities appear in browsers with a steady pace but every now and then a significant jolt occurs. For example, standards like WebAudio, WebAuthentication, PWAs and WASM have had a big impact on what developers can do with the web to provide rich functionality and excellent user experiences.
+The web has rapidly grown into a powerful device-independent platform for apps as well as content. New capabilities appear in browsers in a steady trickle but every now and then a significant jolt occurs. For example, standards like CSS Grid, WebAudio, WebAuthentication, Portable Web Apps (PWAs) and Web Assembly (WASM) have had a big impact on what developers can do with the web to provide rich functionality and excellent user experiences.
 
 Google Maps was an early example of how the web supports rich and powerful user experiences. Now, Users expect to work on their data in apps when they are online or offline and on multiple devices with different capabilities.
 
 Many web apps use a mashup of third party services accessed via HTTP APIs, with backend services and files hosted in cloud and edge services. This provides many business and technical benefits.
 
-As many front ends have become more JavaScript centric, several developer services provide rich on-line app-like development environments.
+As many front ends have become more JavaScript centric, several developer services arrived to provide rich on-line app-like development environments. These show an editor side-by-side with a preview of the web content.
 
 A shout out here to Microsoft Visual Studio code for providing a web native rich IDE experience based on their Monaco editor. Plus a shout out to Google and Electron who's V8 browser core powered the initial desktop version of VS Code, opening the possibilities..
 
@@ -43,6 +43,7 @@ The key enabling technology here is WebAssembly (WASM) which enables code to be 
 
 To provide a complete fullstack integrated development environment (IDE), StackBlitz adds a VS Code editor and file system browser. They also provide GitHub integration for version control. Soon I understand GitHub can be used as the file system as well, providing code security and usual developer workflows. The frontend can be opened out in its own tab/window as well.
 
+The final touch is a set of predefined containers covering a range of backend and front end technologies. This are opened with a click, landing you in the IDE ready to go.
 # The power of a URL for developers
 
 What this means is that given a URL you get a full-stack nodejs and frontend app. All running together in the browser. And, you can use the powerful browser F12 developer tools to debug BOTH front and backend.
