@@ -17,9 +17,9 @@ As many front ends have become more JavaScript centric, several hosted IDEs appe
 
 A shout out here to Microsoft Visual Studio code for providing a solid web technology IDE based on their Monaco editor which is being used in developer focussed web apps. Plus a shout out to Google V8 browser core powered the initial desktop version of VS Code using Electron.
 
-These online IDEs, and other web development services including no/low code, still use servers, though they are largely abstracted away from the developers. And of course developers often manage their own servers for ownership or form more complex deployments. Servers typically run developer tooling and code platforms as an alternative to using a local workstation. Plus servers support the deployment build chain and runtime for both web pages API endpoints tha rich web apps require.
+These online IDEs, and other web development services including no/low code, still use servers, though they are largely abstracted away from the developers. And of course developers often manage their own servers for ownership or more complex deployments. These servers support the deployment build chain and runtime for both web pages API endpoints tha rich web apps require. Servers also typically run developer tooling and code platforms as an alternative to using a local workstation.
 
-But what if all this backend server complexity could also be done in-browser along side the frontend development? What would that even mean? What new features would be enabled?
+But what if this separate backend server complexity could also be included in-browser along side the frontend code? What would that even mean? What new features would be enabled?
 
 ![A web browser showing files, terminal and preview](/public/stackblitz.png "A full stack app running in a web browser")
 
