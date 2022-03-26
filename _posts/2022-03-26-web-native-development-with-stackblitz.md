@@ -3,7 +3,7 @@ layout: post
 title: Web native development with StackBlitz
 ---
 
-<div class="message"><p>The web has evolved into powerful and ubiquitous app deployment platform. We're used to rich in-browser apps that connect to external services and support collaborative real-time experiences. Developer tooling is no different, with on-line development environments (IDEs) and management consoles for front and back ends.</p>
+<div class="message"><p>The web has evolved into the most powerful and ubiquitous app deployment platform. We're used to rich in-browser apps that connect to external services and support collaborative real-time experiences. Developer tooling is no different, with on-line development environments (IDEs) and management consoles for front and back ends.</p>
 
 <p>But the servers are still distinct entities and not part of the apps themselves. That all changed when <a href="https://stackblitz.com/">StackBlitz</a> recently introduced <strong>WebContainers</strong> to the developer community.The rules just changed.</p></div>
 
