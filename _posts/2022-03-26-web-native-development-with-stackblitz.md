@@ -11,11 +11,11 @@ title: Web native development with StackBlitz
 
 The web has rapidly grown into a powerful device-independent platform for apps as well as content. New capabilities appear in browsers in a steady trickle but every now and then a significant jolt occurs. For example, standards like CSS Grid, WebAudio, WebAuthentication, Portable Web Apps (PWAs) and Web Assembly (WASM) have had a big impact on what developers can do with the web to provide rich functionality and excellent user experiences.
 
-Google Maps was an early example of how the web supports rich and powerful user experiences. Now, users expect to work on their data in apps when they are online or offline and on synchronised across multiple devices with different capabilities.
+Google Maps was an early example of how the web supports rich and powerful user experiences. Now, users expect to work on their data in apps when they are online or offline and synchronised across multiple devices with different capabilities.
 
 As many front ends have become more JavaScript centric, several hosted IDEs appeared that provide rich development environments for front end development. These show an editor side-by-side with a view of the web content.
 
-<aside>A shout out here to Microsoft Visual Studio code for providing a solid web technology IDE based on their Monaco editor which is being used in developer focussed web apps. Plus a shout out to Google V8 browser core powered the initial desktop version of VS Code using Electron.</aside>
+A shout out here to Microsoft Visual Studio code for providing a solid web technology IDE based on their Monaco editor which is being used in developer focussed web apps. Plus a shout out to Google V8 browser core powered the initial desktop version of VS Code using Electron.
 
 These online IDEs, and other web development services including no/low code, still use servers, though they are largely abstracted away from the developers. And of course developers often manage their own servers for ownership or form more complex deployments. Servers typically run developer tooling and code platforms as an alternative to using a local workstation. Plus servers support the deployment build chain and runtime for both web pages API endpoints tha rich web apps require.
 
