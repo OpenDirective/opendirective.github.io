@@ -31,7 +31,7 @@ Containers hit the developer world a while back and had a massive impact on syst
 
 What StackBlitz have created, and are building their business on, are containers that run in a web browser. Yes, that right, this is impressive feat is now feasible with the fantastic modern browsers. And what's more, they run really fast too.
 
-WebContainers containers provide a complete linux-style OS with a kernel and minimal `bash` command line environment. This is accessed via terminal window in the StackBlitz web app. In order to provide developer tooling and a web server, you also get `nodejs` and a custom `npm` clone design for speed and security. I hear that more POSIX conformance is being considered too.
+WebContainers provide a complete linux-style OS with a kernel and minimal `bash` command line environment. This is accessed via terminal window in the StackBlitz web app. In order to provide developer tooling and a web server, you also get `nodejs` and a custom `npm` clone design for speed and security. I hear that more POSIX conformance is being considered too.
 
 In addition, for more complex web development needs, `vitejs` is included. While ESM modules could be used explicitly with modern browsers, vite adds useful module import features such as node_modules module resolution and import of css files.
 
