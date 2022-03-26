@@ -5,7 +5,7 @@ title: Web native development with StackBlitz
 
 <div class="message">The web has evolved into powerful and ubiquitous app deployment platform. We're used to rich in-browser apps that save our data online and support collaborative real-time working experiences. For devleopers, however, while backend services have moved from on-prem to cloud and edge, much of the development work is still performed on local devices.
 
-That all changed when [StackBlitz](https://stackblitz.com/) recently presented **WebContainers** to the waiting world. </div>
+That all changed when <a href="https://stackblitz.com/">StackBlitz</a> recently presented **WebContainers** to waiting developers. </div>
 
 ## The web as a platform
 
@@ -19,7 +19,7 @@ As many front ends have become more JavaScript centric, several developer servic
 
 A shout out here to Microsoft Visual Studio code for providing a web native rich IDE experience based on their Monaco editor. Plus a shout out to Google and Electron who's V8 browser core powered the initial desktop version of VS Code, opening the possibilities..
 
-Yet, the back ends for apps are still largly developed on a local device and then deployed, as used to be the most common workflow for frontend development. Services such as Microsoft Azure's "configuration as code" and low/zero code abstractions have mitigated this somewhat by simplifying backend development.
+Yet, the back ends for apps are still largely developed on a local device and then deployed, as used to be the most common workflow for frontend development. Services such as Microsoft Azure's "configuration as code" and low/zero code abstractions have mitigated this somewhat by simplifying backend development.
 
 But what if backend development could also be done in-browser using a rich app? What would that even mean? What new ideas would be enabled?
 
@@ -35,7 +35,7 @@ What StackBlitz have created, and are building a business on, are containers tha
 
 These containers provide a complete linux-style OS with a kernel and minimal `bash` command line environment. This is accessed via terminal window in the StackBlitz web app. So you can run a web server (and more), you also get `nodejs` and a custom `npm` clone design for speed and security. I hear that more POSIX conformance is being considered too.
 
-Finally, for more complex web development needs, vitejs is included. While in this developer environment, ESM modules could be used explicitly, Vite useful import features such as node_modules module resolution.
+Finally, for more complex web development needs, `vitejs` is included. While in the StackBlitz developer environment, ESM modules could be used explicitly, Vite adds useful import features such as node_modules module resolution.
 
 This is no mean feat and has to be seen to be believed. I don't know how much has been implemented from scratch or is a port like the embedded ARM ports of Linux. But the Browser context is distinct from even embedded platforms.
 
