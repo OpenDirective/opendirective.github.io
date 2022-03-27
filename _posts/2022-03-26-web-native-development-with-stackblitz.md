@@ -7,6 +7,7 @@ title: Web native development with StackBlitz
 
 <p>But the servers are still distinct entities and not part of the apps themselves. That all changed when <a href="https://stackblitz.com/">StackBlitz</a> recently introduced <strong>WebContainers</strong> to the developer community.The rules just changed.</p></div>
 
+[Updated 2022-03-27: added a note about secrets and expanded summary]
 ## The web as a platform
 
 The web has rapidly grown into a powerful device-independent platform for apps as well as content. New capabilities appear in browsers in a steady trickle but every now and then a significant jolt occurs. For example, standards like CSS Grid, WebAudio, WebAuthentication, Portable Web Apps (PWAs) and Web Assembly (WASM) have had a big impact on what developers can do with the web to provide rich functionality and excellent user experiences.
@@ -19,7 +20,7 @@ A shout out here to Microsoft Visual Studio code for providing a solid web techn
 
 These online IDEs, and other web development services including no/low code, still use servers, though they are largely abstracted away from the developers. And of course developers often manage their own servers for ownership or more complex deployments. These servers support the deployment build chain and runtime for both web pages API endpoints tha rich web apps require. Servers also typically run developer tooling and code platforms as an alternative to using a local workstation.
 
-But what if this separate backend server complexity could also be included in-browser along side the frontend code? What would that even mean? What new features would be enabled?
+<strong>But what if rather than being separate the backend and web servers could also be deployed in-browser alongside the frontend code? What would that even mean? What new capabilities would be enabled?</strong>
 
 ![A web browser showing files, terminal and preview](/public/stackblitz.png "A full stack app running in a web browser - spot the terminal")
 
@@ -31,11 +32,13 @@ Containers hit the developer world a while back and had a massive impact on syst
 
 What StackBlitz have created, and are building their business on, are containers that run in a web browser. Yes, that right, this is impressive feat is now feasible with the fantastic modern browsers. And what's more, they run really fast too.
 
-WebContainers provide a complete linux-style OS with a kernel and minimal `bash` command line environment. This is accessed via terminal window in the StackBlitz web app. In order to provide developer tooling and a web server, you also get `nodejs` and a custom `npm` clone design for speed and security. I hear that more POSIX conformance is being considered too.
+WebContainers provide a complete linux-style operating system (OS) complete with the kernel and a minimal `bash` command line environment. This is accessed via a terminal window in the StackBlitz web app.
 
-In addition, for more complex web development needs, `vitejs` is included. While ESM modules could be used explicitly with modern browsers, vite adds useful module import features such as node_modules module resolution and import of css files.
+In order to provide developer tooling and a web server, you also get `nodejs` and a custom `npm` clone design for speed and security. I hear that more POSIX conformance is being considered too.
 
-This is "no mean feat" and has to be seen to be believed. I don't know how much has been implemented from scratch or is a port like the embedded ARM ports of Linux. But the Browser context is distinct from even embedded platforms.
+In addition, `vitejs` is included. While ESM modules could be used explicitly with modern browsers, vite adds useful module import features such as node_modules module resolution and import of css files.
+
+This is "no mean feat" and has to be experienced to be believed. I don't know how much has been implemented from scratch or is a port like the embedded ARM ports of Linux. But the browser context is distinct from even embedded platforms.
 
 The key enabling technology here is WebAssembly (WASM) which enables code to be cross compiled to run in a JavaScript engine. Plus, Service Workers, which provide the required "process" for the container to run in, separate from the frontend HTML browser context. The container exposes the usual socket/port for the browser front end to connect to.
 
@@ -54,17 +57,19 @@ As developers often want to leverage existing code and modify it, StackBlitz pro
 
 As browser's support multiple tabs you can have multiple web apps running at once. For example, to compare a fork or Pull Request. They are completely isolated, neatly avoiding the common problem experienced on developer machines of conflicting versions of globally installed tools or dependencies.
 
-Under the bonnet (hood), I expect a URL simply refers to a text based container configuration resource. The StackBlitz code turns that into the fully running app representation. This means not only low server costs for StackBitz but also, as static assets, they can be pushed to the edge. Thus providing very low latency for an even faster developer experience.
+Under the bonnet (hood), I expect a URL simply refers to a text based container configuration resource. The StackBlitz code turns that into the fullstack running app representation. This means not only low server costs for StackBitz but also, as static assets, they can be pushed to the edge. Thus providing very low latency for an even faster developer experience.
 
 # Other benefits
 
-This is much more than ultra cool technology. It could have a huge impact on how developers work together.
+This is much more than ultra cool technology. And it is definitely that! It could have a huge impact on how developers deploy code and work together.
 
 There are some good security gains too. For example, there's less over-the-wire traffic. The code also runs in the deliberately secure browser sandbox. There's also no public server attack service to secure. Currently, WebContainers expose the one port with access limited to the same browser.
 
 Reliability is boosted by the being able to restart the container and build the stack with a simple browser refresh. The lightning fast speed makes this usable.
 
 I'm convinced part of the reason the web exploded was the ability to "View Source" enabling developers to see how code worked. StackBlitz expands this powerful visibility to the server code as well. Of course the caveat is that much terrible code can easily get propagated.
+
+You need to be very careful with your secrets like API tokens. Unless you keep them out of the server source you are going to being giving away access if you ever share(d) your StackBlitz URL (as is most likely). Keeping them in a local file will work for a single developers but a more secure solution will be needed for teams.
 
 For educational uses, embedding a URL in a course, blog or even a presentation provides instant access to running code! What could be better.
 
@@ -86,4 +91,8 @@ For example, how about multiple WebContainers each running locally in its own br
 
 # Summary
 
-In case you can't tell I'm *really* exited by StackBlitz WebContainers. I love the web with a geeky passion. I'm fascinated by developer tooling, workflows and system architectures (which often mirror company structures). In my career I've worked on embedded RTOSs, digital communications, systems code and full stack web. WebContainers bring everything together in one powerful concept. I expect great things.
+The key benefits I see of StackBlitz are in how a fullstack web app can now can have painfree deployment with easy sharing and forking. Plus, the unified debugging of front and backend using the browser dev tools. Obvious applications include protyping, demonstrations, documentaion and education. It's not a big leap to imagining StackBlitz providing the primary deployment mechanism for some fullstack web apps.
+
+In case you can't tell I'm *really* exited by StackBlitz WebContainers. I love the web with a geeky passion. I'm fascinated by developer tooling, workflows and system architectures (which often mirror company structures). In my career I've worked on embedded RTOSs, digital communications, systems code and full stack web.
+
+WebContainers bring everything together in one powerful concept. I expect great things. What can you come up with?
