@@ -7,6 +7,7 @@ title: Web native development with StackBlitz
 
 <p>But the servers are still distinct entities and not part of the apps themselves. That all changed when <a href="https://stackblitz.com/">StackBlitz</a> recently introduced <strong>WebContainers</strong> to the developer community.The rules just changed.</p></div>
 
+[Updated 2022-03-28: added developing on a Chromebook]
 [Updated 2022-03-27: added a note about secrets and expanded summary]
 ## The web as a platform
 
@@ -74,6 +75,8 @@ You need to be very careful with your secrets like API tokens. Unless you keep t
 For educational uses, embedding a URL in a course, blog or even a presentation provides instant access to running code! What could be better.
 
 The compute model is basically Bring You Own Device (BYOD). There's no need to pay high PAYG server runtime costs.
+
+One last benefit is you can develop fullstack on a low cost Chromebook (or a PC refreshed with ChromeOS). I can never get the Linux Integration working on ChromeOS, but that's not an issue no we haveStackBlitz.
 
 # Limitations
 
