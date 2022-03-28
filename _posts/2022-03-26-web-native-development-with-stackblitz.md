@@ -7,8 +7,8 @@ title: Web native development with StackBlitz
 
 <p>But the servers are still distinct entities and not part of the apps themselves. That all changed when <a href="https://stackblitz.com/">StackBlitz</a> recently introduced <strong>WebContainers</strong> to the developer community.The rules just changed.</p></div>
 
-[Updated 2022-03-28: added developing on a Chromebook and quick preview]
-[Updated 2022-03-27: added a note about secrets and expanded summary]
+- [Updated 2022-03-28: added developing on a Chromebook and quick preview]
+- [Updated 2022-03-27: added a note about secrets and expanded summary]
 ## The web as a platform
 
 The web has rapidly grown into a powerful device-independent platform for apps as well as content. New capabilities appear in browsers in a steady trickle but every now and then a significant jolt occurs. For example, standards like CSS Grid, WebAudio, WebAuthentication, Portable Web Apps (PWAs) and Web Assembly (WASM) have had a big impact on what developers can do with the web to provide rich functionality and excellent user experiences.
