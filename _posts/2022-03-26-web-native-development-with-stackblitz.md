@@ -7,7 +7,7 @@ title: Web native development with StackBlitz
 
 <p>But the servers are still distinct entities and not part of the apps themselves. That all changed when <a href="https://stackblitz.com/">StackBlitz</a> recently introduced <strong>WebContainers</strong> to the developer community.The rules just changed.</p></div>
 
-[Updated 2022-03-28: added developing on a Chromebook]
+[Updated 2022-03-28: added developing on a Chromebook and quick preview]
 [Updated 2022-03-27: added a note about secrets and expanded summary]
 ## The web as a platform
 
@@ -76,11 +76,13 @@ For educational uses, embedding a URL in a course, blog or even a presentation p
 
 The compute model is basically Bring You Own Device (BYOD). There's no need to pay high PAYG server runtime costs.
 
+When the improved GitHub integration lands, StackBlitz will provide a quick way to preview any branch or PR, without needing a Continuous Deployment service (though they do have many benefits).
+
 One last benefit is you can develop fullstack on a low cost Chromebook (or a PC refreshed with ChromeOS). I can never get the Linux Integration working on ChromeOS, but that's not an issue no we haveStackBlitz.
 
 # Limitations
 
-For now at least, the backend is limited to a nodejs server and simple architectures. That may not be a restriction for many but there are other popular web frameworks. For example Ruby is still very popular, as is PHP.
+For now at least, the backend is limited to a nodejs server with a simple architectures. That may not be a restriction for many but there are other popular web frameworks. For example Ruby is still very popular, as is PHP.
 
 When you wish to deploy elsewhere there is no easy one-click option, though it's not that hard to do. Static websites, for example SSG generated, are easy enough to deploy with can push of the source to git can trigger a CI/CD service like Vercel or Netlify. The backend code can also be deployed to PaaS or other environments supporting server configuration.
 
@@ -94,7 +96,7 @@ For example, how about multiple WebContainers each running locally in its own br
 
 # Summary
 
-The key benefits I see of StackBlitz are in how a fullstack web app can now can have painfree deployment with easy sharing and forking. Plus, the unified debugging of front and backend using the browser dev tools. You can think of it as a fullstack REPL, if you like. Obvious applications include protyping, demonstrations, documentaion and education. It's not a big leap to imagining StackBlitz providing the primary deployment mechanism for some fullstack web apps.
+The key benefits I see of StackBlitz are in how a fullstack web app can now can have painfree deployment with easy sharing and forking. Plus, the unified debugging of front and backend using the browser dev tools. You can think of it as a fullstack REPL, if you like. Obvious applications include protyping, build previews from GitHub, demonstrations, documentaion and education. It's not a big leap to imagining StackBlitz providing the primary deployment mechanism for some fullstack web apps.
 
 In case you can't tell I'm *really* exited by StackBlitz WebContainers. I love the web with a geeky passion. I'm fascinated by developer tooling, workflows and system architectures (which often mirror company structures). In my career I've worked on embedded RTOSs, digital communications, systems code and full stack web.
 
