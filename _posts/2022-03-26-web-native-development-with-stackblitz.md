@@ -96,7 +96,7 @@ For example, how about multiple WebContainers each running locally in its own br
 
 # Summary
 
-The key benefits I see of StackBlitz are in how a fullstack web app can now can have painfree deployment with easy sharing and forking. Plus, the unified debugging of front and backend using the browser dev tools. You can think of it as a fullstack REPL, if you like. Obvious applications include protyping, build previews from GitHub, demonstrations, documentaion and education. It's not a big leap to imagining StackBlitz providing the primary deployment mechanism for some fullstack web apps.
+The key benefits I see of StackBlitz are in how a fullstack web app can now can have painfree deployment with easy sharing and forking. Plus, the unified debugging of front and backend using the browser dev tools. You can think of it as a fullstack REPL, if you like. Obvious applications include protyping, build previews from GitHub, running examples for bug reports, demonstrations, documentaion and education. It's not a big leap to imagining StackBlitz providing the primary deployment mechanism for some fullstack web apps.
 
 In case you can't tell I'm *really* exited by StackBlitz WebContainers. I love the web with a geeky passion. I'm fascinated by developer tooling, workflows and system architectures (which often mirror company structures). In my career I've worked on embedded RTOSs, digital communications, systems code and full stack web.
 
