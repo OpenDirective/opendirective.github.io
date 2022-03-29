@@ -82,6 +82,8 @@ One last benefit is you can develop fullstack on a low cost Chromebook (or a PC 
 
 # Limitations
 
+The editor is basic and is smissing language services and other useful plugins that are part of the nice experience in VS Code. Perhaps that will change soon. At least Prettier is included.
+
 For now at least, the backend is limited to a nodejs server with a simple architectures. That may not be a restriction for many but there are other popular web frameworks. For example Ruby is still very popular, as is PHP.
 
 When you wish to deploy elsewhere there is no easy one-click option, though it's not that hard to do. Static websites, for example SSG generated, are easy enough to deploy with can push of the source to git can trigger a CI/CD service like Vercel or Netlify. The backend code can also be deployed to PaaS or other environments supporting server configuration.
